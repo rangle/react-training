@@ -4,6 +4,8 @@ title: "Instructors' Guide"
 permalink: /guide/
 ---
 
+## General
+
 -   Let the audience pick the high level topics and perhaps you don't need to cover some
     -   You can give a brief overview of the topics and let the audience pick what they want
 
@@ -27,3 +29,75 @@ permalink: /guide/
 
 -   Build something that represents the thing you were talking about
     -   I.e. building blocks to represent a pipeline of processes
+
+## Part 1: React
+
+FIXME
+
+### [Introduction to React](/a0-react-intro/)
+
+FIXME
+
+### [Getting Started](/a1-start/)
+
+FIXME
+
+### [Making a Component](/a2-component/)
+
+FIXME
+
+### [Outline of Future Work](/a3-outline/)
+
+FIXME
+
+### [Creating a Card List](/a4-cardlist/)
+
+FIXME
+
+### [Creating the Container](/a5-container/)
+
+FIXME
+
+### [Lifecycles](/a6-lifecycles/)
+
+FIXME
+
+### [Conclusion](/a7-conclusion/)
+
+FIXME
+
+## Part 2: Redux
+
+FIXME
+
+### [Introduction to Redux](/b0-redux-intro/)
+
+FIXME
+
+### [Installation](/b1-install/)
+
+FIXME
+
+### [Actions and Reducers](/b2-action-reducer/)
+
+FIXME
+
+### [Providing a Store](/b3-store/)
+
+FIXME
+
+### [Making Connections](/b4-connect/)
+
+FIXME
+
+### [Redux Logging](/b5-logging/)
+
+FIXME
+
+### [Redux Thunk](/b6-thunk/)
+
+FIXME
+
+### [Merging](/b7-merge/)
+
+FIXME
