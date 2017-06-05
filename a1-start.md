@@ -12,7 +12,7 @@ permalink: /a1-start/
 
 - A code editor, ie: Visual Studio Code
 
-- Create React App CLI tool
+- Create React App command line tool
     `npm install --global create-react-app`
 
 ---
