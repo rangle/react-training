@@ -40,7 +40,14 @@ FIXME
 
 ### [Getting Started](/a1-start/)
 
-FIXME
+- Share requirements for getting setup:
+    - Node/NVM
+    - Editor ie. VS Code
+    - create-react-app
+- Create a Robodex App using create-react-app
+- Walk through created folder and have a look at some basic Node project stuff such as package.json, node_modules. Describe what folders do what and show README.md
+- Describe create-react-app commands before serving the app
+- Serve the app and demo
 
 ### [Making a Component](/a2-component/)
 
