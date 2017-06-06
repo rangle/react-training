@@ -4,44 +4,84 @@ title: "Making a Component"
 permalink: /a2-component/
 ---
 
-Now we'll make a component from the markup
+# Components
 
--   Create HelloComponent (stateless, function)
-    -   Create a function called HelloComponent
-    -   Write some JSX in the return statement (i.e. <h1>Hello World</h1>)
-    -   Add the export default statement
+---
 
--   Open the index.js file
-    -   Replace the <App /> with <HelloCompoent /> and save
-    -   You should see an error because the import is missing
-    -   Once you add the import, you'll notice another error
-    -   Add react import to hello component
-    -   Talk about JSX
+## What are Components?
 
--   Update the render method to render HelloComponent
+- The core building block of React applications
+- Views that represent some chunk of the element tree
+- Generate elements during a process known as __rendering__
+- Can take inputs from parent components. Values that come from potential inputs are called __props__
 
--   Demo
+---
 
-At this point we can use the hello world component to illustrate styling
-using Tachyons.
+## JSX
 
--   Install tachyons via npm (i.e. npm install tachyons --save)
+- Brings XML based language into JavaScript
+- Can be created anywhere a JS object can be
+- Non-standard JS, is converted into `React.createElement` calls during the build step
 
--   Add an import statement to index.js for tachyons (import ‘tachyons';)
+---
 
--   Explain the class vs className (due to JS reserved words)
+## Creating a Component
 
--   Apply a ‘f1' class to the div to show how the text font size increases, and ‘tc' class to center the text.
+- Create a basic hello world component
 
--   Introduce the idea of props and show a simple demonstration.
+```js
+const Greet = () => <div>Hello world!</div>;
 
+export default Greet;
 ```
-const Hello = (props) => {*
-    return (
-        <div className='f1 tc'>
-            <div>Hello World</div>
-            <div>Welcome to {props.company}</div>
-        </div>
-    );
-};
+
+- It's just a function
+- What the function returns is what gets rendered
+- Default export for components is a React convention
+
+---
+
+## ReactDOM
+
+- Provides a way for elements created by React to be injected into the DOM
+- Implementing React -> DOM rendering path decouples React elements from the underlying platform, can target platforms other than the DOM
+- `render` inserts the rendered component to the matched element
+
+---
+
+## Props
+
+- Props are inputs passed into a component from a parent component
+- Used to dynamically change what a component renders or how it behaves
+
+---
+
+## Props, Destructuring and JSX
+
+```js
+export const Greet = (props) => <div>Hello {props.company}</div>;
 ```
+
+becomes
+
+```js
+export const Greet = ({ company }) => <div>Hello {company}</div>;
+```
+
+- We can use destructuring assignment to get specific fields of props
+- Use `{}` whenever we need to embed an expression within JSX blocks
+- Embedded expressions are escaped
+- Any JavaScript expression works, even function calls. Be careful not to call functions with side-effects.
+
+---
+
+## Styling With Tachyons
+
+Tachyons is a css toolkit that is:
+
+- __Atomic__:
+    - Style rules are small and serve one purpose
+    - Meant to be combined
+    - Rule names infer implementation details rather than the semantics of the elements being styled
+- __Class driven__: style rules are applied using classes
+- __Responsive__: all style rules are built with support for responsive design
