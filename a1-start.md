@@ -21,11 +21,11 @@ permalink: /a1-start/
 
 - Command line tool that creates a React application with the basic necessities including dependencies
 - `create-react-app Robodex`: creates the app in the folder _Robodex_
-- __package.json__: information on what dependencies your application has as well as some simple commands you can run
-- __README.md__: documentation on React and create-react-app
-- __node_modules__: dependency files
-- __src__: application source files
-- __public__: the build target path
+- `package.json`: information on what dependencies your application has as well as some simple commands you can run
+- `README.md`: documentation on React and create-react-app
+- `node_modules`: dependency files
+- `src`: application source files
+- `public`: the build target path
 
 ---
 
