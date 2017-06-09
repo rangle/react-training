@@ -52,7 +52,21 @@ FIXME
 
 ### [Creating a Card List](/a4-cardlist/)
 
-FIXME
+- This is a good opportunity to do some simple exercises with map, filter, reduce and possibly higher order functions. Some simple examples:
+    - Map: take an array of numbers and multiply them by 2. Higher order function that returns a function that multiplies by argument passed to it
+    - Filter: filter out odd numbers in an array of numbers
+    - Reduce: sum up an array of numbers, multiply an array of numbers.
+
+- Copying and pasting Cards is tedious and doesn't scale out for large numbers of cards, so we create a CardList component
+- We'll create this using the markup in index.js as a hard-coded first step
+- Create an array of objects in the function that will hold the static data
+    - Then map over the array to generate the cards in the return JSX
+    - Don't add `key` prop at first to show a very common error
+    - Then you'll see it's best to put it into a variable and inject the variable into the return JSX
+    - Then "wouldn't it be nice if we could pass this data into the component?"
+
+- Update the component to accept the array as the `robots` prop (which is our array of objects)
+- Finish wiring up the pieces and then demo
 
 ### [Creating the Container](/a5-container/)
 
