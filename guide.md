@@ -48,7 +48,53 @@ FIXME
 
 ### [Outline of Future Work](/a3-outline/)
 
-FIXME
+
+We can now delete the HelloComponent and start building the app with the Card component. We are going to make a Robodex.
+
+-   TODO: demo the final app, make url available for trainees
+
+-   Create the Card.js as a stateless component with hardcoded mock data initially
+```
+<div>
+    <img alt='photo'
+         src='[*//robohash.org/test*](https://robohash.org/test)?size=200x200'/>
+    <div>
+        <h2>Jane Doe</h2>
+        <p>jane.doe@gmail.com</p>
+    </div>
+</div>
+```
+
+-   Convert the hard-coded values into id, name, email props
+-   Now we're going to add json data to make each card different. `robots.js` is available from the lesson 3 folder in the repo
+- Show destructuring of props passed in
+- Introduce propTypes as an option for validating passed in props
+
+- Install `prop-types` package and implementing something like the following
+```
+Card.propTypes = {
+    id: React.PropTypes.number.isRequired,
+    name: React.PropTypes.string.isRequired,
+    email: React.PropTypes.string.isRequired
+};
+```
+
+- Add the below classes to the Card component
+```
+<div className='bg-light-green dib br3 pa3 ma2 grow'>
+    <img role='presentation'
+         src={`//robohash.org/${id}?size=200x200`} />
+    <div>
+        <h2>{name}</h2>
+        <p>{email}</p>
+    </div>
+</div>
+```
+
+- Demo without changing index.js to illustrate the error you get when missing props
+- Make sure each Card has different values to illustrate how each card is different but the same
+- Copy and paste individual cards before moving to list format
+- Mention Flow/TypeScript as static analysis options
 
 ### [Creating a Card List](/a4-cardlist/)
 
