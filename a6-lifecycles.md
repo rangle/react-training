@@ -4,92 +4,44 @@ title: "Lifecycles"
 permalink: /a6-lifecycles/
 ---
 
--   Introducing lifecycle methods
+# Lifecycle Methods
 
--   Tell the audience about lifecycle methods, how they work, when they're called, what they're names are, etc.
-    -   componentWillMount / componentDidMount
-    -   componentWillUnmount
-    -   componentWillReceiveProps
-    -   componentShouldUpdate
-    -   Use this image:
+---
 
-<http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png>
+# Categories
 
--   All lifecycle methods have the proper ‘this' context set, unlike methods you create (non-arrow functions)
+TODO: Replace this diagram with a Rangle version
 
--   Create a componentDidMount that will call apiCall(), which will be a method to return the static robot data
+http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png
 
--   To illustrate isPending, set a timeout for fetching the data
+---
 
-```
-componentDidMount() {
-    setTimeout(() => {
-        fetch('https://jsonplaceholder.typicode.com/users')
-        .then(response => response.json())
-        .then(data => this.setState({robots: data}))
-    }, 3000)
-}
-```
+## Mounting
 
--   Add isPending to state
+When a component is created and inserted into the DOM.
 
--   Wrap fetch in a setTimeout
+- `constructor`: When a component is created. Do basic state initialization here.
 
--   Add code to render to show loading indicator when isPending
+- `componentDidMount`: Called after a component has finished mounting. Ajax calls that can cause component re-renders should go here.
 
--   Update code to use REST API for data instead of hard-coded
+- `componentWillMount`: Called during server rendering. Use constructor otherwise.
 
--   This will also allow us to demonstrate lifecycle methods
+---
 
--   We'll need to create a function to fetch this data
-    -   Make it return the same static data first
-    -   Then update it to return a promise and resolve it instantly
-    -   Then change it to use fetch
+## Updating
 
-```
-componentDidMount() {
-    apiCall('https://jsonplaceholder.typicode.com/users')
-    .then(response =>
-        this.setState({
-            robots: response,
-            isPending: false
-        })
-    )
-}
-```
+When a component's props or state has changed.
 
-At this point we should review what the App component is
+- `shouldComponentUpdate`: Called after a component's props or state has changed. Decides whether or not a component should re-render. Main use is performance optimization.
 
--   Container
+- `componentWillUpdate`, `componentDidUpdate`: Called before and after a component re-renders. Any manual work done outside of React in whenever updates happen should be done here. ie. encapsulation of 3rd party UI libraries within a component.
 
--   Root Component (is top most component)
+- `componentWillReceiveProps`: Called before a component's has received props whose values have changed.
 
--   Smart Component (has logic)
+--
 
--   Stateful component (has state)
+## Unmounting
 
-Add a scrollable component
+When a component is destroyed and removed from the DOM.
 
--   First create a div in the App.js (which will be moved to a component later)
-
--   Add the styling for the div (height, overflow-y, border)
-
-```
-<div style={
-    {
-        height: '80vh',
-        overflowY: 'scroll',
-        border: '1px solid black'
-    }
-}>
-    {props.children}
-</div>
-```
-
--   Children is good to use when the component should be agnostic to its content
-
--   Move the div into a component, add props.children
-
--   This will give the opportunity to introduce props.children
-
--   Demo
+- `componentWillUnmount`: Called when a component is destroyed and removed from the DOM. Do any clean up here ie. remove 3rd party listeners, unsubscribe, etc.
