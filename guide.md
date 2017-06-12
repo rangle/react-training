@@ -72,7 +72,13 @@ FIXME
 
 ### [Introduction to Redux](/b0-redux-intro/)
 
-FIXME
+- Start by going over what problems Redux tries to address
+    - State is getting more complicated
+    - GUIs can interact with many different parts of the state
+    - Web applications have client/server dynamic
+- Summarize what Redux is
+- Use diagram to explain the main abstractions in short detail and how all state updates must follow this pattern in order to achieve benefits of predictability
+- Provide more context regarding the roles of Actions, Reducer and Store in more detail
 
 ### [Installation](/b1-install/)
 
