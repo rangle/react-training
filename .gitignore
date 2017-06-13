@@ -1,5 +1,6 @@
-# Editor backup files
+# Editor backup files etc.
 *~
+.DS_Store
 
 # Jekyll files
 _site
