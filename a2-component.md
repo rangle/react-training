@@ -4,30 +4,24 @@ title: "Making a Component"
 permalink: /a2-component/
 ---
 
-# Components
+## What Are Components?
 
----
-
-## What are Components?
-
-- The core building block of React applications
+- The core building blocks of React applications
 - Views that represent some chunk of the element tree
-- Generate elements during a process known as __rendering__
-- Can take inputs from parent components. Values that come from potential inputs are called __props__
-
----
+- Generate elements during *rendering*
+- Can take inputs from parent components
+  - Values passed in from the outside are called *props* (short for "properties")
 
 ## JSX
 
-- Brings XML based language into JavaScript
-- Can be created anywhere a JS object can be
-- Non-standard JS, is converted into `React.createElement` calls during the build step
-
----
+- Allows HTML-style tags to be freely mixed with JavaScript
+- Can be created anywhere a JavaScript object can be
+- *Not part of JavaScript*
+  - JSX is onverted into calls to `React.createElement` during the build step
 
 ## Creating a Component
 
-- Create a basic hello world component
+- Create a basic "hello world" component
 
 ```js
 const Greet = () => <div>Hello world!</div>;
@@ -35,53 +29,63 @@ const Greet = () => <div>Hello world!</div>;
 export default Greet;
 ```
 
-- It's just a function
-- What the function returns is what gets rendered
-- Default export for components is a React convention
-
----
+- `Greet` is just a function returning text
+  - JSX-to-JavaScript compilation wraps the return in quotes
+  - Transformation is more complicated in bigger examples, but the idea is the same
+- Using a default export for components is a React convention
+  - `Greet.js` will (almost always) export `Greet` and only `Greet`
 
 ## ReactDOM
 
 - Provides a way for elements created by React to be injected into the DOM
-- Implementing React -> DOM rendering path decouples React elements from the underlying platform, can target platforms other than the DOM
+- Implementing a React-to-DOM rendering path decouples React elements from the underlying platform
+  - So React applications can target platforms that don't use a DOM
 - `render` inserts the rendered component to the matched element
-
----
 
 ## Props
 
-- Props are inputs passed into a component from a parent component
+- Props (properties) are data passed into a component from a parent component
 - Used to dynamically change what a component renders or how it behaves
+
+- Component definition:
+
+```js
+export const Greet = (props) => <div>Hello {props.company}</div>;
+```
+
+- Component use:
+
+```js
+<Greet company="Rangle.io" />
+```
+
+- Result:
+
+```html
+<div>Hello Rangle.io</div>
+```
 
 ---
 
 ## Props, Destructuring and JSX
 
 ```js
-export const Greet = (props) => <div>Hello {props.company}</div>;
-```
-
-becomes
-
-```js
 export const Greet = ({ company }) => <div>Hello {company}</div>;
 ```
 
-- We can use destructuring assignment to get specific fields of props
-- Use `{}` whenever we need to embed an expression within JSX blocks
-- Embedded expressions are escaped
-- Any JavaScript expression works, even function calls. Be careful not to call functions with side-effects.
-
----
+- We can use *destructuring assignment* to get specific fields of props
+- And use `{}` to embed an expression within JSX blocks
+  - Yes, the over-use of notation is confusing
+- Embedded expressions are automatically escaped
+- Any JavaScript expression works, even function calls
+- Be careful *not* to call functions with side-effects
 
 ## Styling With Tachyons
 
-Tachyons is a css toolkit that is:
+Tachyons is a CSS toolkit that is:
 
-- __Atomic__:
-    - Style rules are small and serve one purpose
-    - Meant to be combined
-    - Rule names infer implementation details rather than the semantics of the elements being styled
-- __Class driven__: style rules are applied using classes
-- __Responsive__: all style rules are built with support for responsive design
+- Atomic: style rules are small and serve one purpose, which makes them easy to combine
+- Class driven: style rules are applied using classes
+- Responsive: all style rules support responsive design
+- Rule names reflect effect rather than the semantics of the elements being styled
+- FIXME: example of Tachyons styling
