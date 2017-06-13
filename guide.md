@@ -80,7 +80,12 @@ FIXME
 
 ### [Actions and Reducers](/b2-action-reducer/)
 
-FIXME
+- Create a reducers folder and create a robotSearchReducer
+- Create an actions folder and create a `CHANGE_SEARCHTERM` action
+- Update reducer to handle the action
+- Add store using `createStore` in index.js, feeding the robotSearchReducer to it
+- Use debugger to examine contents of store
+- Use `Provider` from react-redux, assign the store to it and then wrap the App component
 
 ### [Providing a Store](/b3-store/)
 
