@@ -165,7 +165,14 @@ Side note: This is a good point for a break
 
 ### [Lifecycles](/a6-lifecycles/)
 
-FIXME
+- Introduce lifecycles as phases that are generally useful for adding special procesing logic
+- In some cases that logic replaces existing default logic
+- Summarize the three different categories of lifecycle methods
+- Explain mounting and go into componentDidMount as a place to do ajax requests.
+- Discuss in short detail updating and unmounting
+- Go back to componentDidMount and use that to transition into coding the ajax call to get robots
+- Create a robot provider
+- Implement ajax call in App.js `componentDidMount` member
 
 ### [Conclusion](/a7-conclusion/)
 
