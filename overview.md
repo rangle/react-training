@@ -29,19 +29,7 @@ building fast, scalable code.
 ## Prerequisits 
 
 - NPM and Node v6+ <http://nodejs.org/download/>
-  - The download above should install two commands: `node` and `npm`.
-  - `npm` may require some extra configuration to set permissions
-        properly.
-
-- A code editor.
-    Any text editor or modern IDE will work;
-    at Rangle.io, the most popular choices are:
-  - [Atom](https://atom.io/)
-  - [Sublime Text](http://www.sublimetext.com/)
-  - [VS Code](https://code.visualstudio.com/)
-  - [Vim](http://www.vim.org/download.php)
-  - [WebStorm](https://www.jetbrains.com/webstorm/)
-
+- A code editor
 - A basic understanding of JavaScript ES6, including:
   - Built-in data types, loops, conditionals, and functions
   - Modules

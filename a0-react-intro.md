@@ -4,37 +4,15 @@ title: "Introduction to React"
 permalink: /a0-react-intro/
 ---
 
-# Rangle React Training
-
-FIXME
-
----
-
-## Instructors
-
-FIXME
-
----
-
-## Agenda
-
-FIXME
-
----
-
 ## What is React?
 
-- Javascript UI framework
-- Declarative views
-- Centered around small building blocks and combining those to build larger ones
+- A Javascript UI framework based on declarative views
+- Core principle: generate page with nested function calls that take data as input and produce HTML as output
 
----
+## Why React?
 
-## Why do we need React?
-
-- Before reactive UI frameworks were around, DOM trees had to be put together imperatively
-
-- Eg. jQuery
+- Older UI frameworks built DOM trees imperatively
+- E.g. [jQuery](https://jquery.com/)
 
 ```js
 $('.more-detail').click(function() {
@@ -49,22 +27,23 @@ $('.more-detail').click(function() {
 ```
 
 - Data had to be stored on the HTML element as an attribute
-- $.get call is asynchronous, we are trusting that the state of the DOM to look a certain way when the GET request completes
-- Requiring that HTML be rendered on the server
+- `$.get` call is asynchronous
+- Requires that HTML initially be created on the server
 
+## What's Wrong With This?
 
-## What's wrong with this?
-
-There are some problems with this setup:
-- View and model layers are coupled
-- State needs to be well understood by the developer when doing manual DOM manipulation, requires understanding of entire DOM tree rather than just being worried about your small chunk
+- Views and models are tightly coupled
+  - We are trusting the DOM to be in a certain state when the `GET` request completes
+  - Which makes combining components hard
+- The more HTML is generated on the server, the harder it is to handle a variety of devices
+- State needs to be well understood by the developer
+  - More specifically, the *entire* DOM tree needs to be understood rather than just a small chunk
 - View implementation details retained in different parts of the codebase make it more difficult to maintain
-- Scales poorly with application complexity
-- Updates are slow
+- Scales poorly: updates are slow, and get slower as the application becomes more complex
 
-## Why do we need React?
+## Enter React
 
 - DOM nodes are no longer a source of data
-- Declarative view rendering and composition remove the need to understand DOM state when updating views
-- View implementation details are less spread out
-- Quicker render times due to React only re-rendering parts of the view that need to be updated
+- Declarative view rendering and composition removes the need to understand DOM state when updating views
+- View implementation details are easier to modularize
+- It's faster: React only re-renders those parts of the view that need to be updated

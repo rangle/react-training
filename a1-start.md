@@ -6,32 +6,39 @@ permalink: /a1-start/
 
 ## Requirements
 
-- Need the latest Long-term Support version of Node.js
-    - Install using NVM (Mac/Linux)
-    - Installer from Nodejs.org (all)
+- Install the latest Long-term Support version of NPM and Node v6+ from <http://nodejs.org/download/>
+  - The download above should install two commands: `node` and `npm`
+  - `npm` may require some extra configuration to set permissions properly
+  - Can also install using NVM on Mac/Linux
 
-- A code editor, ie: Visual Studio Code
+- A code editor
+  - Any text editor or modern IDE will work
+  - [Atom](https://atom.io/)
+  - [Sublime Text](http://www.sublimetext.com/)
+  - [VS Code](https://code.visualstudio.com/)
+  - [Vim](http://www.vim.org/download.php)
+  - [WebStorm](https://www.jetbrains.com/webstorm/)
 
-- Create React App command line tool
-    `npm install --global create-react-app`
-
----
+- `create-react-app` command-line tool:
+   `npm install --global create-react-app`
 
 ## Create React App
 
-- Command line tool that creates a React application with the basic necessities including dependencies
-- `create-react-app Robodex`: creates the app in the folder _Robodex_
-- `package.json`: information on what dependencies your application has as well as some simple commands you can run
-- `README.md`: documentation on React and create-react-app
+- Command-line tool that creates a React application with a standard structure and dependencies
+- `create-react-app robodex`: creates the app in the folder `robodex`
+- `package.json`: information on what dependencies your application has as well as some simple commands
+- `README.md`: documentation on React and `create-react-app`
+  - Replace this with a description of your application
 - `node_modules`: dependency files
 - `src`: application source files
 - `public`: the build target path
 
----
-
 ## Create React App Commands
 
-- __start__: serves the application in a develoopment environment. code changes will refresh the browser
-- __build__: builds the application and copies the files to the _public_ folder
-- __test__: runs the application tests
-- __eject__: ejects the build configuration, only for advanced users who need customization
+- Use `npm command` to run
+- `start`: serves the application in a development environment
+  - Code changes are automatically refreshed in the browser
+- `build`: builds the application for deployment and copies the files to the `public` folder
+- `test`: runs the application's tests
+- `eject`: ejects the build configuration
+   - Only for advanced users who need customization
