@@ -86,6 +86,7 @@ FIXME
 - Add store using `createStore` in index.js, feeding the robotSearchReducer to it
 - Use debugger to examine contents of store
 - Use `Provider` from react-redux, assign the store to it and then wrap the App component
+- Inspect using Redux DevTools to see if everything has completed alright
 
 ### [Providing a Store](/b3-store/)
 
