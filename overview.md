@@ -6,82 +6,78 @@ permalink: /overview/
 
 This training consists of:
 
--   Part 1: This is an introductory 3 hour course on React using the
-    *create-react-app* tool. It is geared for Javascript developers who
-    are interested in diving into the React library and have a good
-    understanding of basic ES6 features. The structure of the course *will
-    start with a few slides and dive into a full live coding *tutorial
-    that the students can follow along.
+-   Part 1: an introductory 3-hour course on React using the
+    `create-react-app` tool geared for JavaScript developers who have
+    a good understanding of basic ES6 features. The course starts with
+    a few slides and then dives into a live coding tutorial that
+    learners can work through in sync with the instructor.
 
--   Part 2: This is an introductory 2 hour course on Redux using an
-    existing React application that was built in part 1 of this
-    series. It is geared towards Javascript developers who have
-    previous understanding of the React library, basic ES6 features,
-    and would like to learn state management through Redux. We will
-    transform an existing app to include redux in order to be
-    extensible and scalable. By the end of the course the students
-    will have a working react + redux application. The structure of
-    the course will start with a few slides and dive into a full live
-    coding tutorial that the students can follow along.
+-   Part 2: a 2-hour introduction on Redux using the React application
+    that was built in Part 1 for JavaScript developers who understand
+    the basics of ES6 and React and would like to learn state
+    management with Redux. This part also uses live coding, and by its
+    end, learners will have a working React + Redux application.
 
-At the end of each part we will have a fully functioning application.
-Along the way, students will learn current best practices for building
-fast, scalable code. Each course builds on top of the previous course
-and extends the web app. However, students can jump into whichever
-module they prefer if they have experience already in the previous
-ones.
+-   Part 3: advanced topics that may be included based on learners'
+    prior experience with JavaScript, React, and Redux.
+
+Each part culminates in a fully functioning application, and while the
+second uses the code built in the first, it can be used independently.
+As well as React and Redux, learners will learn best practices for
+building fast, scalable code.
 
 ## Prerequisits 
 
 -   NPM and Node v6+ <http://nodejs.org/download/>
-    -   The download above should install two commands: node and npm.
-    -   npm may require some extra configuration to set permissions properly on
-        your system.
+    -   The download above should install two commands: `node` and `npm`.
+    -   `npm` may require some extra configuration to set permissions
+        properly.
 
 -   A code editor.
-    Any text editor will work.
-    At Rangle.io, the most popular editors/IDEs are:
-    -   [Vim](http://www.vim.org/download.php)
-    -   [Sublime Text](http://www.sublimetext.com/)
+    Any text editor or modern IDE will work;
+    at Rangle.io, the most popular choices are:
     -   [Atom](https://atom.io/)
+    -   [Sublime Text](http://www.sublimetext.com/)
+    -   [VS Code](https://code.visualstudio.com/)
+    -   [Vim](http://www.vim.org/download.php)
     -   [WebStorm](https://www.jetbrains.com/webstorm/)
 
--   Some understanding of JavaScript ES6:
-    -   Classes
-    -   Default Params
-    -   Template Literals
-    -   Destructuring
-    -   Arrow Functions
-    -   Promises
-    -   let and const
+-   A basic understanding of JavaScript ES6, including:
+    -   Built-in data types, loops, conditionals, and functions
     -   Modules
+    -   Functional programming with `Array.map`, `Array.filter`, etc.
+    -   Classes
+    -   Default parameters for functions
+    -   Template literals (back-quoted strings)
+    -   Destructuring assignment
+    -   "Fat arrow" functions
+    -   Promises
 
-## Lesson Plan
+## Syllabus
 
--   First session is about React only
-    -   Leverage create-react-app to streamline setup
-    -   State & Props
-    -   Stateless/Stateful components
-    -   JSX
-    -   Lifecycle methods
-    -   PropTypes
-    -   DOM mounting
-    -   REST API (fetch)
-    -   createClass() vs class vs function
-    -   Build a basic app starting from a dumb component
+-   Part 1: React
+    -   Leveraging `create-react-app` to create a new application
+    -   Using JSX
+    -   Properties and state
+    -   Using `PropTypes` to statically check code
+    -   Component lifecycle methods
+    -   Stateless and stateful components
+    -   Styling components
+    -   Routing
+    -   Handling asynchronous data operations
 
--   Second session introduces Redux
-    -   Illustrate how redux solves the problem of global variables
-        (i.e. sharing data between containers)
-    -   Containers becoming redux aware (via connect)
+-   Part 2: Redux
+    -   The problem of global state
+    -   Using transformations on immutable state
     -   Action creators
     -   Reducers
-    -   Constants for action names
+    -   Making containers Redux-aware
+    -   Using constants for action names
 
--   Last session is for advanced topics using React and Redux
+-   Part 3: Advanced Topics
     -   Jest/Enzyme testing
-    -   Immutable.js
+    -   `Immutable.js`
     -   Selectors
     -   Sagas
-    -   Scaling concerns
     -   Performance
+    -   Scaling
