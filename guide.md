@@ -51,7 +51,21 @@ FIXME
 
 ### [Making a Component](/a2-component/)
 
-FIXME
+- Explain what components are, including description for rendering and props
+- Explain what JSX is
+- Create a stateless greeting component and break each part down into detail
+- Talk about ReactDOM
+    - does the actual work of inserting React components into the DOM tree
+    - allows other renderers for different platforms/uses
+- Replace `App` in _index.js_ with `Greet`
+- Describe props being inputs from parent component. Allows composability and extensibility of components
+- Add props to Greet component and change text to rely on props
+- Pass in props from _index.js_
+- Talk about destructuring props
+- Explain how embedded expressions work
+- Introduce Tachyons and explain what it is and how it changes styling approach, contrast with semantic approach
+- Start styling the greeting component, open up docs to give the audience the opportunity to see it
+- Explain the oddity with className and how attribute string binding works
 
 ### [Outline of Future Work](/a3-outline/)
 
