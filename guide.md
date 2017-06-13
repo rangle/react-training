@@ -11,8 +11,6 @@ permalink: /guide/
 
 -   Simple demo
 
--   Trivia/Crossword puzzle, statements with a blank that they can fill in the blank
-
 -   Intelligent Interrupts
     -   Structure into your talk, breaks for the audience to interact
     -   Encourage a conversation about the topic
@@ -34,86 +32,49 @@ permalink: /guide/
 
 FIXME
 
-### [Introduction to React](/a0-react-intro/)
+### [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
 
 FIXME
 
-### [Getting Started](/a1-start/)
+### [Getting Started]({{'/a1-start/'|absolute_url}})
 
 - Share requirements for getting setup:
-    - Node/NVM
-    - Editor ie. VS Code
-    - create-react-app
-- Create a Robodex App using create-react-app
-- Walk through created folder and have a look at some basic Node project stuff such as package.json, node_modules. Describe what folders do what and show README.md
-- Describe create-react-app commands before serving the app
+  - Node/NVM
+  - Editor
+  - `create-react-app`
+- Create a Robodex app using `create-react-app`
+- Walk through created folder and have a look at some basic Node project stuff
+  such as `package.json` and `node_modules`
+- Describe what folders do what and show `README.md`
+- Describe `create-react-app` commands before serving the app
 - Serve the app and demo
 
-### [Making a Component](/a2-component/)
+### [Making a Component]({{'/a2-component/'|absolute_url}})
 
 - Explain what components are, including description for rendering and props
 - Explain what JSX is
 - Create a stateless greeting component and break each part down into detail
 - Talk about ReactDOM
-    - does the actual work of inserting React components into the DOM tree
-    - allows other renderers for different platforms/uses
-- Replace `App` in _index.js_ with `Greet`
-- Describe props being inputs from parent component. Allows composability and extensibility of components
-- Add props to Greet component and change text to rely on props
-- Pass in props from _index.js_
+  - Does the actual work of inserting React components into the DOM tree
+  - Allows other renderers for different platforms/uses
+- Replace `App` in `index.js` with `Greet`
+- Describe props being inputs from parent component
+  - Allows composability and extensibility of components
+- Add props to `Greet` component and change text to rely on props
+- Pass in props from `index.js`
 - Talk about destructuring props
 - Explain how embedded expressions work
-- Introduce Tachyons and explain what it is and how it changes styling approach, contrast with semantic approach
-- Start styling the greeting component, open up docs to give the audience the opportunity to see it
-- Explain the oddity with className and how attribute string binding works
+- Introduce Tachyons, explain what it is and how it changes styling approach
+  - Contrast with semantic approach
+- Start styling the greeting component
+  - Open up docs to give the audience the opportunity to see it
+- Explain the oddity with `className` and how attribute string binding works
 
-### [Outline of Future Work](/a3-outline/)
+### [Next Steps]({{'/a3-outline/'|absolute_url}})
 
-
-We can now delete the HelloComponent and start building the app with the Card component. We are going to make a Robodex.
-
--   TODO: demo the final app, make url available for trainees
-
--   Create the Card.js as a stateless component with hardcoded mock data initially
-```
-<div>
-    <img alt='photo'
-         src='[*//robohash.org/test*](https://robohash.org/test)?size=200x200'/>
-    <div>
-        <h2>Jane Doe</h2>
-        <p>jane.doe@gmail.com</p>
-    </div>
-</div>
-```
-
--   Convert the hard-coded values into id, name, email props
--   Now we're going to add json data to make each card different. `robots.js` is available from the lesson 3 folder in the repo
-- Show destructuring of props passed in
-- Introduce propTypes as an option for validating passed in props
-
-- Install `prop-types` package and implementing something like the following
-```
-Card.propTypes = {
-    id: React.PropTypes.number.isRequired,
-    name: React.PropTypes.string.isRequired,
-    email: React.PropTypes.string.isRequired
-};
-```
-
-- Add the below classes to the Card component
-```
-<div className='bg-light-green dib br3 pa3 ma2 grow'>
-    <img role='presentation'
-         src={`//robohash.org/${id}?size=200x200`} />
-    <div>
-        <h2>{name}</h2>
-        <p>{email}</p>
-    </div>
-</div>
-```
-
-- Demo without changing index.js to illustrate the error you get when missing props
-- Make sure each Card has different values to illustrate how each card is different but the same
+- Demo the final app at the start of this section, making the URL available for trainees
+- Demo without changing `index.js` to illustrate the error produced by missing props
+- Make sure each `Card` has different values to illustrate how each card is different but the same
 - Copy and paste individual cards before moving to list format
 - Mention Flow/TypeScript as static analysis options
 

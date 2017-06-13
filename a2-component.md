@@ -89,3 +89,7 @@ Tachyons is a CSS toolkit that is:
 - Responsive: all style rules support responsive design
 - Rule names reflect effect rather than the semantics of the elements being styled
 - FIXME: example of Tachyons styling
+
+## Styling
+
+- FIXME: explain `className`
