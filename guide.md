@@ -76,7 +76,10 @@ FIXME
 
 ### [Installation](/b1-install/)
 
-FIXME
+- Install redux and react-redux into the robodex app
+- Go to the Redux Devtools Extension readme to give trainees the option to download the version they need
+- Go to Chrome Store, install and show how to confirm it's been installed correctly
+- Show that no store has been detected yet
 
 ### [Actions and Reducers](/b2-action-reducer/)
 
