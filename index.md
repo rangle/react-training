@@ -1,6 +1,5 @@
 ---
 layout: page
-title: "React Training"
 permalink: /index.html
 ---
 
