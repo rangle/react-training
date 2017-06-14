@@ -1,6 +1,6 @@
 ---
 layout: lesson
-title: "Next Steps"
+title: "Introducing Robodex"
 permalink: /a3-outline/
 ---
 

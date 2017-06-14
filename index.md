@@ -8,7 +8,7 @@ permalink: /index.html
   - [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
   - [Getting Started]({{'/a1-start/'|absolute_url}})
   - [Making a Component]({{'/a2-component/'|absolute_url}})
-  - [Next Steps]({{'/a3-outline/'|absolute_url}})
+  - [Introducing Robodex]({{'/a3-outline/'|absolute_url}})
   - [Creating a Card List]({{'/a4-cardlist/'|absolute_url}})
   - [Creating the Container]({{'/a5-container/'|absolute_url}})
   - [Lifecycle Methods]({{'/a6-lifecycles/'|absolute_url}})
