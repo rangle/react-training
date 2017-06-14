@@ -4,6 +4,7 @@ title: "Getting Started"
 permalink: /a1-start/
 ---
 
+---
 ## Requirements
 
 - Install the latest Long-term Support version of NPM and Node v6+ from <http://nodejs.org/download/>
@@ -22,6 +23,7 @@ permalink: /a1-start/
 - `create-react-app` command-line tool:
    `npm install --global create-react-app`
 
+---
 ## Create React App
 
 - Command-line tool that creates a React application with a standard structure and dependencies
@@ -33,6 +35,7 @@ permalink: /a1-start/
 - `src`: application source files
 - `public`: the build target path
 
+---
 ## Create React App Commands
 
 - Use `npm command` to run

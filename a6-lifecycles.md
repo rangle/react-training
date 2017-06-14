@@ -1,21 +1,17 @@
 ---
 layout: lesson
-title: "Lifecycles"
+title: "Lifecycle Methods"
 permalink: /a6-lifecycles/
 ---
 
-# Lifecycle Methods
-
 ---
-
-# Categories
+## Categories
 
 TODO: Replace this diagram with a Rangle version
 
 http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png
 
 ---
-
 ## Mounting
 
 When a component is created and inserted into the DOM.
@@ -27,7 +23,6 @@ When a component is created and inserted into the DOM.
 - `componentWillMount`: Called during server rendering. Use constructor otherwise.
 
 ---
-
 ## Updating
 
 When a component's props or state has changed.
@@ -38,8 +33,7 @@ When a component's props or state has changed.
 
 - `componentWillReceiveProps`: Called before a component's has received props whose values have changed.
 
---
-
+---
 ## Unmounting
 
 When a component is destroyed and removed from the DOM.

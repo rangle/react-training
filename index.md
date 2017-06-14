@@ -11,7 +11,7 @@ permalink: /index.html
   - [Next Steps]({{'/a3-outline/'|absolute_url}})
   - [Creating a Card List]({{'/a4-cardlist/'|absolute_url}})
   - [Creating the Container]({{'/a5-container/'|absolute_url}})
-  - [Lifecycles]({{'/a6-lifecycles/'|absolute_url}})
+  - [Lifecycle Methods]({{'/a6-lifecycles/'|absolute_url}})
   - [Conclusion]({{'/a7-conclusion/'|absolute_url}})
 - Part 2: Redux
   - [Introduction to Redux]({{'/b0-redux-intro/'|absolute_url}})

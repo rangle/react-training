@@ -4,11 +4,13 @@ title: "Introduction to React"
 permalink: /a0-react-intro/
 ---
 
+---
 ## What is React?
 
 - A Javascript UI framework based on declarative views
 - Core principle: generate page with nested function calls that take data as input and produce HTML as output
 
+---
 ## Why React?
 
 - Older UI frameworks built DOM trees imperatively
@@ -30,6 +32,7 @@ $('.more-detail').click(function() {
 - `$.get` call is asynchronous
 - Requires that HTML initially be created on the server
 
+---
 ## What's Wrong With This?
 
 - Views and models are tightly coupled
@@ -41,6 +44,7 @@ $('.more-detail').click(function() {
 - View implementation details retained in different parts of the codebase make it more difficult to maintain
 - Scales poorly: updates are slow, and get slower as the application becomes more complex
 
+---
 ## Enter React
 
 - DOM nodes are no longer a source of data

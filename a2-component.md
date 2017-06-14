@@ -4,6 +4,7 @@ title: "Making a Component"
 permalink: /a2-component/
 ---
 
+---
 ## What Are Components?
 
 - The core building blocks of React applications
@@ -12,6 +13,7 @@ permalink: /a2-component/
 - Can take inputs from parent components
   - Values passed in from the outside are called *props* (short for "properties")
 
+---
 ## JSX
 
 - Allows HTML-style tags to be freely mixed with JavaScript
@@ -19,6 +21,7 @@ permalink: /a2-component/
 - *Not part of JavaScript*
   - JSX is onverted into calls to `React.createElement` during the build step
 
+---
 ## Creating a Component
 
 - Create a basic "hello world" component
@@ -35,6 +38,7 @@ export default Greet;
 - Using a default export for components is a React convention
   - `Greet.js` will (almost always) export `Greet` and only `Greet`
 
+---
 ## ReactDOM
 
 - Provides a way for elements created by React to be injected into the DOM
@@ -42,6 +46,7 @@ export default Greet;
   - So React applications can target platforms that don't use a DOM
 - `render` inserts the rendered component to the matched element
 
+---
 ## Props
 
 - Props (properties) are data passed into a component from a parent component
@@ -67,6 +72,7 @@ export const Greet = (props) => <div>Hello {props.company}</div>;
 
 ---
 
+---
 ## Props, Destructuring and JSX
 
 ```js
@@ -80,6 +86,7 @@ export const Greet = ({ company }) => <div>Hello {company}</div>;
 - Any JavaScript expression works, even function calls
 - Be careful *not* to call functions with side-effects
 
+---
 ## Styling With Tachyons
 
 Tachyons is a CSS toolkit that is:
@@ -90,6 +97,7 @@ Tachyons is a CSS toolkit that is:
 - Rule names reflect effect rather than the semantics of the elements being styled
 - FIXME: example of Tachyons styling
 
+---
 ## Styling
 
 - FIXME: explain `className`
