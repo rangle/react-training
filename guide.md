@@ -1,41 +1,36 @@
 ---
-layout: lesson
+layout: page
 title: "Instructors' Guide"
 permalink: /guide/
 ---
 
+<a id="general"></a>
 ## General
 
--   Let the audience pick the high level topics and perhaps you don't need to cover some
-    -   You can give a brief overview of the topics and let the audience pick what they want
-
--   Simple demo
-
--   Intelligent Interrupts
-    -   Structure into your talk, breaks for the audience to interact
-    -   Encourage a conversation about the topic
-    -   Permission to interact
-    -   Two sticky notes; one for passive help and one for active help
-
--   Balanced chance to speak, sticky note to indicate if you've spoken already to prevent over contributor
-
--   Bring paper, pens, and encourage doodling
-
--   Quiz them
-    -   Mind maps; draw them while listening and compare at intervals
-        -   Compare mind map at the end to my mind map; this encourages people to pay attention
-
--   Build something that represents the thing you were talking about
-    -   I.e. building blocks to represent a pipeline of processes
+- Let the audience pick the high level topics and perhaps you don't need to cover some
+  - You can give a brief overview of the topics and let the audience pick what they want
+- Simple demo
+- Intelligent interrupts
+  - Structure into your talk, breaks for the audience to interact
+  - Encourage a conversation about the topic
+  - Permission to interact
+  - Two sticky notes; one for passive help and one for active help
+- Balanced chance to speak, sticky note to indicate if you've spoken already to prevent over contributor
+- Bring paper, pens, and encourage doodling
+- Quiz them
+  - Mind maps: draw them while listening and compare at intervals
+  - Compare mind map at the end to my mind map to encourage people to pay attention
+- Build something that represents the thing you were talking about
+  - I.e., building blocks to represent a pipeline of processes
 
 ## Part 1: React
 
-FIXME
-
+<a id="a0-react-intro"></a>
 ### [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
 
 FIXME
 
+<a id="a1-start"></a>
 ### [Getting Started]({{'/a1-start/'|absolute_url}})
 
 - Share requirements for getting setup:
@@ -49,6 +44,7 @@ FIXME
 - Describe `create-react-app` commands before serving the app
 - Serve the app and demo
 
+<a id="a2-component"></a>
 ### [Making a Component]({{'/a2-component/'|absolute_url}})
 
 - Explain what components are, including description for rendering and props
@@ -70,6 +66,7 @@ FIXME
   - Open up docs to give the audience the opportunity to see it
 - Explain the oddity with `className` and how attribute string binding works
 
+<a id="a3-outline"></a>
 ### [Next Steps]({{'/a3-outline/'|absolute_url}})
 
 - Demo the final app at the start of this section, making the URL available for trainees
@@ -78,25 +75,20 @@ FIXME
 - Copy and paste individual cards before moving to list format
 - Mention Flow/TypeScript as static analysis options
 
-### [Creating a Card List](/a4-cardlist/)
+<a id="a4-cardlist"></a>
+### [Creating a Card List]({{'/a4-cardlist/'|absolute_url}})
 
-- This is a good opportunity to do some simple exercises with map, filter, reduce and possibly higher order functions. Some simple examples:
-    - Map: take an array of numbers and multiply them by 2. Higher order function that returns a function that multiplies by argument passed to it
-    - Filter: filter out odd numbers in an array of numbers
-    - Reduce: sum up an array of numbers, multiply an array of numbers.
-
-- Copying and pasting Cards is tedious and doesn't scale out for large numbers of cards, so we create a CardList component
-- We'll create this using the markup in index.js as a hard-coded first step
-- Create an array of objects in the function that will hold the static data
-    - Then map over the array to generate the cards in the return JSX
-    - Don't add `key` prop at first to show a very common error
-    - Then you'll see it's best to put it into a variable and inject the variable into the return JSX
-    - Then "wouldn't it be nice if we could pass this data into the component?"
-
-- Update the component to accept the array as the `robots` prop (which is our array of objects)
+- Put some robot definitions in `robots.js` and import that rather than hard-coding into `CardList`
+- Update `CardList` to accept the array as the `robots` prop (which is our array of objects)
+- Don't add `key` prop to the generated `Card` elements at first to show a very common error
 - Finish wiring up the pieces and then demo
+- This is a good opportunity to do some simple exercises with `map` and `filter` (and possibly other higher-order functions)
+  - Map: take an array of numbers and multiply them by 2
+  - Filter: filter out odd numbers in an array of numbers
+  - Reduce: sum up an array of numbers, multiply an array of numbers
 
-### [Creating the Container](/a5-container/)
+<a id="/a5-container/"></a>
+### [Creating the Container]({{'/a5-container/'|absolute_url}})
 
 - Go over how stateless components don't re-render even if inputs change
 - Investigate render stage using console.log or debugger
@@ -123,8 +115,8 @@ FIXME
 
 Side note: This is a good point for a break
 
-
-### [Lifecycles](/a6-lifecycles/)
+<a id="/a6-lifecycles/"></a>
+### [Lifecycles]({{'/a6-lifecycles/'|absolute_url}})
 
 - Introduce lifecycles as phases that are generally useful for adding special procesing logic
 - In some cases that logic replaces existing default logic
@@ -135,54 +127,61 @@ Side note: This is a good point for a break
 - Create a robot provider
 - Implement ajax call in App.js `componentDidMount` member
 
-### [Conclusion](/a7-conclusion/)
+<a id="/a7-conclusion/"></a>
+### [Conclusion]({{'/a7-conclusion/'|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
 - Go back and show how what has been done so far connects to what React is in essence:
-    - Reactive since views are re-rendered on state updates
-    - Declarative since renders are pure and can be expressed as a single JSX expression
-    - The app is built from the composition of small components
+  - Reactive since views are re-rendered on state updates
+  - Declarative since renders are pure and can be expressed as a single JSX expression
+  - The app is built from the composition of small components
 -  To build interactivity, we combine callbacks (methods) with props, and state
 -  It's best practice as apps get bigger, it solves a huge problem that massive projects have faced in the past. This is why people love React. React has these walls to guide you in this style of mentality. So when you build apps, you are using good practices.
 
 ## Part 2: Redux
 
-FIXME
-
-### [Introduction to Redux](/b0-redux-intro/)
+<a id="/b0-redux-intro/"></a>
+### [Introduction to Redux]({{'/b0-redux-intro/'|absolute_url}})
 
 - Start by going over what problems Redux tries to address
-    - State is getting more complicated
-    - GUIs can interact with many different parts of the state
-    - Web applications have client/server dynamic
+  - State is getting more complicated
+  - GUIs can interact with many different parts of the state
+  - Web applications have client/server dynamic
 - Summarize what Redux is
 - Use diagram to explain the main abstractions in short detail and how all state updates must follow this pattern in order to achieve benefits of predictability
 - Provide more context regarding the roles of Actions, Reducer and Store in more detail
 
-### [Installation](/b1-install/)
+<a id="/b1-install/"></a>
+### [Installation]({{'/b1-install/'|absolute_url}})
 
 FIXME
 
-### [Actions and Reducers](/b2-action-reducer/)
+<a id="/b2-action-reducer/"></a>
+### [Actions and Reducers]({{'/b2-action-reducer/'|absolute_url}})
 
 FIXME
 
-### [Providing a Store](/b3-store/)
+<a id="/b3-store/"></a>
+### [Providing a Store]({{'/b3-store/'|absolute_url}})
 
 FIXME
 
-### [Making Connections](/b4-connect/)
+<a id="/b4-connect/"></a>
+### [Making Connections]({{'/b4-connect/'|absolute_url}})
 
 FIXME
 
-### [Redux Logging](/b5-logging/)
+<a id="/b5-logging/"></a>
+### [Redux Logging]({{'/b5-logging/'|absolute_url}})
 
 FIXME
 
-### [Redux Thunk](/b6-thunk/)
+<a id="/b6-thunk/"></a>
+### [Redux Thunk]({{'/b6-thunk/'|absolute_url}})
 
 FIXME
 
-### [Merging](/b7-merge/)
+<a id="/b7-merge/"></a>
+### [Merging]({{'/b7-merge/'|absolute_url}})
 
 FIXME
