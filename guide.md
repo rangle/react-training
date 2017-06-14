@@ -174,7 +174,18 @@ FIXME
 <a id="/b4-connect/"></a>
 ### [Making Connections]({{'/b4-connect/'|absolute_url}})
 
-FIXME
+- Do a simple store.subscribe solution that calls `React.render` on the application
+- Demo the app to see that Redux is working as expected
+- This solution is more limited since it requires re-rendering the whole application for every state change
+- Start with a basic connect solution provided by react-redux
+- Import actions into app.js
+- Create a mapStateToProps function that takes the state and returns an object with searchTerm
+  - Explain how this function is a way of turning redux state into component props
+- Create a mapDispatchToProps function that returns an `onSearchChange` prop that dispatches the changeSearchTerm action
+  - Explain how this function is a way of mapping dispatcher functions to component props
+- Import connect and connect the component to our mapping functions
+- Change the default export to the connected App component
+- This way of implementation makes it so that the component doesn't need to be aware of the implementation details of how it recieves context values, just that it gets them
 
 <a id="/b5-logging/"></a>
 ### [Redux Logging]({{'/b5-logging/'|absolute_url}})
