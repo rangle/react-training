@@ -189,4 +189,9 @@ FIXME
 <a id="/b7-merge/"></a>
 ### [Merging]({{'/b7-merge/'|absolute_url}})
 
-FIXME
+- Notify that mergeProps is one way to intercept props passed into a component and use that when interacting with state
+- How we'll use it in this case is to help us with filtering robots
+- Create a new function called mergeProps in App.js that takes state and dispatch arguments
+- Add a new filteredRobots prop that filters the list of robots based on the search term
+- Update the connect call to include mergeProps as the third param
+- Use the filteredRobots prop in the CardList component to render the Cards
