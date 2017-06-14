@@ -177,14 +177,42 @@ FIXME
 FIXME
 
 <a id="/b5-logging/"></a>
-### [Redux Logging]({{'/b5-logging/'|absolute_url}})
 
-FIXME
+- Introduce the concept of Redux middleware
+- It's similar to middleware in other libraries but it runs between the action and reducer
+- Talk about logging middleware since it's probably the most obviously useful
+- Install `redux-logger`
+- Import and create the logger
+- Apply the middleware and demo the logger to see that it logs to the console
 
 <a id="/b6-thunk/"></a>
 ### [Redux Thunk]({{'/b6-thunk/'|absolute_url}})
 
-FIXME
+- Introduce the concept of thunks as ways to delay evaluation and execution
+- Show some quick examples with plain JS
+- Talk about the benefits of why this is useful to redux, sometimes state updates need to be delayed
+- Add new action constants for pending, success, and error
+- Import the constants you just created in the actions file
+  - Add an action creator for fetching robot data
+    - Returns a function that accepts dispatch (and optionally getState since thunk provides it)
+      - Inside the function...
+      - Dispatch pending
+      - Call fetch
+      - On then fire the success action with payload
+      - On error fire the error action
+- Import the constants for the new action in the reducers file
+    - Create a new reducer for robots data
+        - Create a new initial state for robot data, is pending, and has error
+        - Create a reducer function that will implement the new constants
+    - Change the export default to export and add an export for the new reducer
+- Change the import statement within index for the reducer to use curly braces to import each of the reducers separately
+- Implement reducers through combineReducers before calling createStore
+  - Explain that this can be done as a default export too (in reducers.js)
+  - Import reduxThunk from redux-thunk and apply it as middleware
+- Open App.js and import the new action
+- Update mapStateToProps and mapDispatchToProps
+  - Note, now that we're using combineReducers, you'll need to update the state.searchTerm to include reducer name (i.e. state.robotSearch.searchTerm)
+- Replace the contents of componentDidMount to call the action to fetch robots
 
 <a id="/b7-merge/"></a>
 ### [Merging]({{'/b7-merge/'|absolute_url}})

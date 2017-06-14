@@ -4,32 +4,20 @@ title: "Redux Logging"
 permalink: /b5-logging/
 ---
 
-Now that we have a redux application running; how do we know what is
-firing? What data is being passed? How would we debug any errors in
-redux? The redux logger!
+# Redux Middleware
 
--   Install the logger via npm install redux-logger --save
+---
 
--   Open the index.js file and add:
+## What is Redux Middleware?
 
-```
-import createLogger from ‘redux-logger';
-```
+- Similar to middleware in other libraries or frameworks
+- Adds a way for 3rd parties to introduce their own logic or processing
+- Runs between an action being dispatched and when it hits the reducer
 
--   Create an instance of the logger by calling createLogger():
+---
 
-```
-const logger = createLogger();
-```
+## Logging Middleware
 
--   Ensure the applyMiddleware function is imported from redux
-
--   Update the createStore call to add a second argument:
-    -   applyMiddleware(logger)
-    -   So that it looks like:
-
-```
-const store = createStore(rootReducer, applyMiddleware(logger))
-```
-
--   Now load the app and show the logs in the console
+- Since all state updates happen through Redux actions, we have a centralized point to intercept and log state changes
+- All actions having a serializable type gives us a human readable name to understand the intent of state changes
+- Pure reducers make logging the before state and after state very useful and simple
