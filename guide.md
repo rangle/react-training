@@ -154,7 +154,10 @@ Side note: This is a good point for a break
 <a id="/b1-install/"></a>
 ### [Installation]({{'/b1-install/'|absolute_url}})
 
-FIXME
+- Install redux and react-redux into the robodex app
+- Go to the Redux Devtools Extension readme to give trainees the option to download the version they need
+- Go to Chrome Store, install and show how to confirm it's been installed correctly
+- Show that no store has been detected yet
 
 <a id="/b2-action-reducer/"></a>
 ### [Actions and Reducers]({{'/b2-action-reducer/'|absolute_url}})

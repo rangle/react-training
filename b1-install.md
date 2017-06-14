@@ -4,24 +4,20 @@ title: "Installing Redux"
 permalink: /b1-install/
 ---
 
-The main idea is that you describe how your state is updated over time
-in response to action objects, and 90% of the code you write is just
-plain JavaScript, with no use of Redux itself, its APIs, or any magic.
-Let's go over the core concepts:
+## Getting Redux
 
-- Clone the robodex repo and start it running
+- Redux is available through npm: `npm install redux`
 
--   git clone
-    <https://github.com/aneagoie/react-training-RoboDex>
+- There is also a package that provides easy interoperability between redux and react called _react-redux_. `npm install react-redux`
 
--   npm install
+- react-redux makes integration easier but is not absolutely necessary
 
--   npm start
+---
 
-We need to connect Redux to react. Redux can be used with anything so
-first we need to download it's binding:
-npm install --save redux react-redux
+## Redux DevTools
 
--   Only the containers know of the redux store and will be communicating
-    with them. The components won't know anything (dumb/presentation
-    components).
+Redux DevTools is a debugging tool that allows you to:
+
+- easier visualize your application's current state
+- move forward and backwards throughout your state (time travelling!)
+- Available for Chrome, Firefox and Electron and other environments
