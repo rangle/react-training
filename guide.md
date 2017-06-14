@@ -159,15 +159,21 @@ FIXME
 ### [Actions and Reducers]({{'/b2-action-reducer/'|absolute_url}})
 
 - Create a reducers folder and create a robotSearchReducer
-- Create an actions folder and create a `CHANGE_SEARCHTERM` action
-- Update reducer to handle the action
+- Create a constants file and export a changeSearchTerm action
+- Create an actions folder and create a `CHANGE_SEARCHTERM` action creator
+- Update reducer that:
+  - handles the action
+  - takes a default state, and returns the same state when no action constants are matched
+- emphasize that reducers must be pure, and return a valid state in all cases
+
+<a id="/b3-store/"></a>
+### [Providing a Store]({{'/b3-store/'|absolute_url}})
+
 - Add store using `createStore` in index.js, feeding the robotSearchReducer to it
 - Use debugger to examine contents of store
 - Use `Provider` from react-redux, assign the store to it and then wrap the App component
 - Inspect using Redux DevTools to see if everything has completed alright
 
-<a id="/b3-store/"></a>
-### [Providing a Store]({{'/b3-store/'|absolute_url}})
 
 FIXME
 
