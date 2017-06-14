@@ -162,7 +162,13 @@ Side note: This is a good point for a break
 <a id="/b2-action-reducer/"></a>
 ### [Actions and Reducers]({{'/b2-action-reducer/'|absolute_url}})
 
-FIXME
+- Create a reducers folder and create a robotSearchReducer
+- Create an actions folder and create a `CHANGE_SEARCHTERM` action
+- Update reducer to handle the action
+- Add store using `createStore` in index.js, feeding the robotSearchReducer to it
+- Use debugger to examine contents of store
+- Use `Provider` from react-redux, assign the store to it and then wrap the App component
+- Inspect using Redux DevTools to see if everything has completed alright
 
 <a id="/b3-store/"></a>
 ### [Providing a Store]({{'/b3-store/'|absolute_url}})
