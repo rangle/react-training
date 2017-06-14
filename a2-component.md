@@ -71,8 +71,6 @@ export const Greet = (props) => <div>Hello {props.company}</div>;
 ```
 
 ---
-
----
 ## Props, Destructuring and JSX
 
 ```js
