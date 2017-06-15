@@ -1,0 +1,60 @@
+div.guide {
+}
+
+div.keypoints {
+  background-color: #F0F0F0
+}
+
+div.questions {
+  background-color: #F0F0F0
+}
+
+.message {
+  background: #404040;
+  color: #FFFFFF;
+  position: absolute;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  min-height: 100%;
+  padding-top: 10px;
+  transition: right 300ms;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+#toggle {
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  left: -100%;
+  top: -100%;
+}
+
+#toggle + label {
+  position: absolute;
+  cursor: pointer;
+  padding-left: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#toggle + label:after {
+  content: '\2630';
+  font-size: 1.5em;
+}
+
+.container {
+  transition: margin 300ms;
+}
+
+#toggle:checked ~ .message {
+  right: 0;
+}
+
+#toggle:checked + label:after {
+  content: '\2630';
+  font-size: 1.5em;
+}

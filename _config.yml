@@ -1,0 +1,38 @@
+# Display.
+title: "FIXME Main Title"
+subtitle: "FIXME Subtitle"
+
+# Code highlighting.
+highlighter: rouge
+
+# Magic to make URLs resolve both locally and on GitHub.
+# See https://help.github.com/articles/repository-metadata-on-github-pages/.
+repository: <USERNAME>/<PROJECT>
+
+# Table of contents.
+toc:
+- permalink: /intro/
+  title: Introduction
+  type: lesson
+  questions:
+  - FIXME
+  keypoints:
+  - FIXME
+- permalink: /guide/
+  title: Guide
+  type: misc
+- permalink: /gloss/
+  title: Glossary
+  type: misc
+- permalink: /refs/
+  title: References
+  type: misc
+- permalink: /license/
+  title: License
+  type: misc
+- permalink: /conduct/
+  title: Code of Conduct
+  type: misc
+- permalink: /contributing/
+  title: Contributing
+  type: misc
