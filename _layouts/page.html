@@ -1,30 +1,48 @@
+{% assign previous = null %}
+{% assign next = null %}
+{% assign this = null %}
+{% assign title = null %}
+{% unless page.manual %}
+  {% for item in site.toc  %}
+    {% if item.permalink == page.permalink %}
+      {% assign this = item %}
+      {% assign title = item.title %}
+      {% unless forloop.first %}
+        {% assign previous = previous_item %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next = site.toc[forloop.index] %}
+      {% endunless %}
+      {% break %}
+    {% endif %}
+    {% assign previous_item = item %}
+  {% endfor %}
+{% endunless %}
 <!DOCTYPE HTML>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="search-domain" content="http://rangle.io" />
+    <meta name="search-domain" content="http://gvwilson.github.io/js-vs-rc" />
     <link href="{{'/css/bootstrap.css' | absolute_url}}" rel="stylesheet" />
     <link href="{{'/css/bootstrap-theme.css' | absolute_url}}" rel="stylesheet" />
+    <link href="{{'/css/syntax.css' | absolute_url}}" rel="stylesheet" />
+    <link href="{{'/css/site.css' | absolute_url}}" rel="stylesheet" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>{{site.title}}{% if page.title %}: {{page.title}}{% endif %}</title>
+    <title>{{site.title}}{% if this %}: {{this.title}}{% endif %}</title>
   </head>
   <body>
-    <div class="container shadow">
-      <header>
-        {% if page.title %}
-        <div align="center"><h3><em><a href="{{'/'|absolute_url}}">{{site.title}}</a></em></h3></div>
-        <h1>{{page.title}}</h1>
-        {% else %}
-        <h1>{{site.title}}</h1>
-        {% endif %}
-      </header>
-      {{content}}
-      <footer>
-        <div align="center">
-          <hr/>
-          <p><em>Copyright &copy; 2017 <a href="http://rangle.io">Rangle.io</a></em></p>
-        </div>
-      </footer>
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label for="toggle"></label>
+    <div class="container">
+      {% include nav.html copyright=false previous=previous.permalink next=next.permalink %}
+      {% if this %}<h1>{{this.title}}</h1>{% endif %}
+      {% if this.type == "lesson" %}{% include listblock.html title="Questions" items=this.questions class="questions" %}{% endif %}
+{{content}}
+      {% if this.type == "lesson" %}{% include listblock.html title="Key Points" items=this.keypoints class="keypoints" %}{% endif %}
+      {% include nav.html copyright=true previous=previous.permalink next=next.permalink %}
+    </div>
+    <div class="message">
+{% include toc.html %}
     </div>
   </body>
 </html>

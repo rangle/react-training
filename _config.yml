@@ -1,5 +1,85 @@
-title: "Rangle.io Introduction to React"
+author: "Rangle.io"
+title: "Introduction to React"
+subtitle: "Rangle.io"
+
+# Code highlighting.
+highlighter: rouge
 
 # Magic to make URLs resolve both locally and on GitHub.
 # See https://help.github.com/articles/repository-metadata-on-github-pages/.
 repository: <USERNAME>/<PROJECT>
+
+# Table of contents.
+toc:
+- title: Overview
+- permalink: /overview/
+- type: lesson
+- title: Introduction to React
+- permalink: /a0-react-intro/
+- type: lesson
+- title: Getting Started
+- permalink: /a1-start/
+- type: lesson
+- title: Making a Component
+- permalink: /a2-component/
+- type: lesson
+- title: Introducing Robodex
+- permalink: /a3-outline/
+- type: lesson
+- title: Creating a Card List
+- permalink: /a4-cardlist/
+- type: lesson
+- title: Creating the Container
+- permalink: /a5-container/
+- type: lesson
+- title: Lifecycle Methods
+- permalink: /a6-lifecycles/
+- type: lesson
+- title: Conclusion
+- permalink: /a7-conclusion/
+- type: lesson
+- title: Introduction to Redux
+- permalink: /b0-redux-intro/
+- type: lesson
+- title: Installation
+- permalink: /b1-install/
+- type: lesson
+- title: Actions and Reducers
+- permalink: /b2-action-reducer/
+- type: lesson
+- title: Providing a Store
+- permalink: /b3-store/
+- type: lesson
+- title: Making Connections
+- permalink: /b4-connect/
+- type: lesson
+- title: Redux Logging
+- permalink: /b5-logging/
+- type: lesson
+- title: Redux Thunk
+- permalink: /b6-thunk/
+- type: lesson
+- title: Merging
+- permalink: /b7-merge/
+- type: lesson
+- title: Advanced Topics
+- permalink: /advanced/
+- type: lesson
+- permalink: /guide/
+  title: Guide
+  type: misc
+- permalink: /gloss/
+  title: Glossary
+  type: misc
+- permalink: /refs/
+  title: References
+  type: misc
+- permalink: /license/
+  title: License
+  type: misc
+- permalink: /conduct/
+  title: Code of Conduct
+  type: misc
+- permalink: /contributing/
+  title: Contributing
+  type: misc

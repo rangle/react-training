@@ -1,4 +1,7 @@
-# License
+---
+layout: page
+permalink: "/license/"
+---
 
 Copyright (c) 2017 Rangle.io.
 
