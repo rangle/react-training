@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Making Connections"
-permalink: /b4-connect/
+permalink: /redux-connect/
 ---
 
 -   connect the app to Redux

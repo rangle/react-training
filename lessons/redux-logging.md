@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Redux Logging"
-permalink: /b5-logging/
+permalink: /redux-logging/
 ---
 
 Now that we have a redux application running; how do we know what is

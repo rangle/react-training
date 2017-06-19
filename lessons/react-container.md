@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Creating the Container"
-permalink: /a4-container/
+permalink: /react-container/
 ---
 
 ---

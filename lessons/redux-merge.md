@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Merging"
-permalink: /b7-merge/
+permalink: /redux-merge/
 ---
 
 -   We're going to leverage mergeProps to help us with filtering robots

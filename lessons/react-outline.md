@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Introducing Robodex"
-permalink: /a2-outline/
+permalink: /react-outline/
 ---
 
 ---

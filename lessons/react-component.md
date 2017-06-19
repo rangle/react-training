@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Making a Component"
-permalink: /a1-component/
+permalink: /react-component/
 ---
 
 ---

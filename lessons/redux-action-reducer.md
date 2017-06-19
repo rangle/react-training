@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Actions and Reducers"
-permalink: /b2-action-reducer/
+permalink: /redux-action-reducer/
 ---
 
 -   Create the action, actiontype constant, and reducer
@@ -35,10 +35,10 @@ export const SET_SEARCH_TERM = ‘SET_SEARCH_TERM';
     -   Create function for the reducer
         -   Default state to initial state
         -   Default action to empty object (to prevent undefined error when accessing action.type in switch)
-        -   Create a switch statement
-            -   with a case for the action type
-            -   Default statement for returning state
-            -   Object.assign({}, state, {searchTerm: action.payload})
-                === pure functions. You always return a new state in a reducer.
-            -   Explain that you could use an if instead of a switch
-            -   Explain that this function must be pure and return a valid state each time
+    -   Create a switch statement
+        -   with a case for the action type
+        -   Default statement for returning state
+        -   Object.assign({}, state, {searchTerm: action.payload})
+    -   You always return a new state in a reducer.
+        -   Explain that you could use an if instead of a switch
+        -   Explain that this function must be pure and return a valid state each time

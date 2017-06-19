@@ -23,8 +23,8 @@ permalink: /guide/
 - Build something that represents the thing you were talking about
   - I.e., building blocks to represent a pipeline of processes
 
-<a id="a0-react-intro"></a>
-### [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
+<a id="react-intro"></a>
+### [Introduction to React]({{'/react-intro/'|absolute_url}})
 
 - Share requirements for getting setup:
   - Node/NVM
@@ -37,8 +37,8 @@ permalink: /guide/
 - Describe `create-react-app` commands before serving the app
 - Serve the app and demo
 
-<a id="a1-component"></a>
-### [Making a Component]({{'/a1-component/'|absolute_url}})
+<a id="react-component"></a>
+### [Making a Component]({{'/react-component/'|absolute_url}})
 
 - Explain what components are, including description for rendering and props
 - Explain what JSX is
@@ -59,8 +59,8 @@ permalink: /guide/
   - Open up docs to give the audience the opportunity to see it
 - Explain the oddity with `className` and how attribute string binding works
 
-<a id="a2-outline"></a>
-### [Next Steps]({{'/a2-outline/'|absolute_url}})
+<a id="react-outline"></a>
+### [Next Steps]({{'/react-outline/'|absolute_url}})
 
 - Demo the final app at the start of this section, making the URL available for trainees
 - Demo without changing `index.js` to illustrate the error produced by missing props
@@ -68,8 +68,8 @@ permalink: /guide/
 - Copy and paste individual cards before moving to list format
 - Mention Flow/TypeScript as static analysis options
 
-<a id="a3-cardlist"></a>
-### [Creating a Card List]({{'/a3-cardlist/'|absolute_url}})
+<a id="react-cardlist"></a>
+### [Creating a Card List]({{'/react-cardlist/'|absolute_url}})
 
 - Put some robot definitions in `robots.js` and import that rather than hard-coding into `CardList`
 - Update `CardList` to accept the array as the `robots` prop (which is our array of objects)
@@ -80,8 +80,8 @@ permalink: /guide/
   - Filter: filter out odd numbers in an array of numbers
   - Reduce: sum up an array of numbers, multiply an array of numbers
 
-<a id="/a4-container/"></a>
-### [Creating the Container]({{'/a4-container/'|absolute_url}})
+<a id="/react-container/"></a>
+### [Creating the Container]({{'/react-container/'|absolute_url}})
 
 - Ask learners how to connect search box to parent component before doing work
 - Show details of adding the event handler to `SearchBox` component's `onChange` event
@@ -104,8 +104,8 @@ permalink: /guide/
 
 **Side note: This is a good point for a break**
 
-<a id="/a5-lifecycles/"></a>
-### [Lifecycles]({{'/a5-lifecycles/'|absolute_url}})
+<a id="/react-lifecycles/"></a>
+### [Lifecycles]({{'/react-lifecycles/'|absolute_url}})
 
 - Summarize the three different categories of lifecycle methods
 - Explain mounting and go into componentDidMount as a place to do AJAX requests
@@ -114,8 +114,8 @@ permalink: /guide/
 - Create a robot provider
 - Implement AJAX call in `App.js`'s `componentDidMount` member
 
-<a id="/a6-react-summary/"></a>
-### [React Summary]({{'/a6-react-summary/'|absolute_url}})
+<a id="/react-summary/"></a>
+### [React Summary]({{'/react-summary/'|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
 - Go back and show how what has been done so far connects to what React is in essence:
@@ -125,8 +125,8 @@ permalink: /guide/
 -  To build interactivity, we combine callbacks (methods) with props, and state
 -  It's best practice as apps get bigger, it solves a huge problem that massive projects have faced in the past. This is why people love React. React has these walls to guide you in this style of mentality. So when you build apps, you are using good practices.
 
-<a id="/b0-redux-intro/"></a>
-### [Introduction to Redux]({{'/b0-redux-intro/'|absolute_url}})
+<a id="/redux-intro/"></a>
+### [Introduction to Redux]({{'/redux-intro/'|absolute_url}})
 
 - Start by going over what problems Redux tries to address
   - State is getting more complicated
@@ -135,17 +135,13 @@ permalink: /guide/
 - Summarize what Redux is
 - Use diagram to explain the main abstractions in short detail and how all state updates must follow this pattern in order to achieve benefits of predictability
 - Provide more context regarding the roles of Actions, Reducer and Store in more detail
-
-<a id="/b1-install/"></a>
-### [Installation]({{'/b1-install/'|absolute_url}})
-
 - Install redux and react-redux into the robodex app
 - Go to the Redux Devtools Extension readme to give trainees the option to download the version they need
 - Go to Chrome Store, install and show how to confirm it's been installed correctly
 - Show that no store has been detected yet
 
-<a id="/b2-action-reducer/"></a>
-### [Actions and Reducers]({{'/b2-action-reducer/'|absolute_url}})
+<a id="/redux-action-reducer/"></a>
+### [Actions and Reducers]({{'/redux-action-reducer/'|absolute_url}})
 
 - Create a reducers folder and create a robotSearchReducer
 - Create an actions folder and create a `CHANGE_SEARCHTERM` action
@@ -155,27 +151,27 @@ permalink: /guide/
 - Use `Provider` from react-redux, assign the store to it and then wrap the App component
 - Inspect using Redux DevTools to see if everything has completed alright
 
-<a id="/b3-store/"></a>
-### [Providing a Store]({{'/b3-store/'|absolute_url}})
+<a id="/redux-store/"></a>
+### [Providing a Store]({{'/redux-store/'|absolute_url}})
 
 FIXME
 
-<a id="/b4-connect/"></a>
-### [Making Connections]({{'/b4-connect/'|absolute_url}})
+<a id="/redux-connect/"></a>
+### [Making Connections]({{'/redux-connect/'|absolute_url}})
 
 FIXME
 
-<a id="/b5-logging/"></a>
-### [Redux Logging]({{'/b5-logging/'|absolute_url}})
+<a id="/redux-logging/"></a>
+### [Redux Logging]({{'/redux-logging/'|absolute_url}})
 
 FIXME
 
-<a id="/b6-thunk/"></a>
-### [Redux Thunk]({{'/b6-thunk/'|absolute_url}})
+<a id="/redux-thunk/"></a>
+### [Redux Thunk]({{'/redux-thunk/'|absolute_url}})
 
 FIXME
 
-<a id="/b7-merge/"></a>
-### [Merging]({{'/b7-merge/'|absolute_url}})
+<a id="/redux-merge/"></a>
+### [Merging]({{'/redux-merge/'|absolute_url}})
 
 FIXME

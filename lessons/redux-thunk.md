@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Redux Thunk"
-permalink: /b6-thunk/
+permalink: /redux-thunk/
 ---
 
 -   Run and discuss; walk through the code to review all the steps

@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Lifecycle Methods"
-permalink: /a5-lifecycles/
+permalink: /react-lifecycles/
 ---
 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Introduction to React"
-permalink: /a0-react-intro/
+permalink: /react-intro/
 ---
 
 ---

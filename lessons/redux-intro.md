@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Introduction to Redux"
-permalink: /b0-redux-intro/
+permalink: /redux-intro/
 ---
 
 ---
@@ -57,3 +57,18 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 - Where the entire application state exists
 - An application should only have one store
 - In larger applications, the store will be split into multiple slices
+
+---
+## Getting Redux
+
+- Redux is available through npm: `npm install redux`
+- There is also a package that provides easy interoperability between redux and react called _react-redux_. `npm install react-redux`
+- react-redux makes integration easier but is not absolutely necessary
+
+---
+## Redux DevTools
+
+- Redux DevTools is a debugging tool that allows you to:
+  - visualize your application's current state
+  - move forward and backwards throughout your state (time travelling!)
+- Available for Chrome, Firefox and Electron and other environments

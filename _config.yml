@@ -15,49 +15,46 @@ toc:
   permalink: /overview/
   type: lesson
 - title: Introduction to React
-  permalink: /a0-react-intro/
+  permalink: /react-intro/
   type: lesson
 - title: Making a Component
-  permalink: /a1-component/
+  permalink: /react-component/
   type: lesson
 - title: Introducing Robodex
-  permalink: /a2-outline/
+  permalink: /react-outline/
   type: lesson
 - title: Creating a Card List
-  permalink: /a3-cardlist/
+  permalink: /react-cardlist/
   type: lesson
 - title: Creating the Container
-  permalink: /a4-container/
+  permalink: /react-container/
   type: lesson
 - title: Lifecycle Methods
-  permalink: /a5-lifecycles/
+  permalink: /react-lifecycles/
   type: lesson
 - title: React Summary
-  permalink: /a6-react-summary/
+  permalink: /react-summary/
   type: lesson
 - title: Introduction to Redux
-  permalink: /b0-redux-intro/
-  type: lesson
-- title: Installation
-  permalink: /b1-install/
+  permalink: /redux-intro/
   type: lesson
 - title: Actions and Reducers
-  permalink: /b2-action-reducer/
+  permalink: /redux-action-reducer/
   type: lesson
 - title: Providing a Store
-  permalink: /b3-store/
+  permalink: /redux-store/
   type: lesson
 - title: Making Connections
-  permalink: /b4-connect/
+  permalink: /redux-connect/
   type: lesson
 - title: Redux Logging
-  permalink: /b5-logging/
+  permalink: /redux-logging/
   type: lesson
 - title: Redux Thunk
-  permalink: /b6-thunk/
+  permalink: /redux-thunk/
   type: lesson
 - title: Merging
-  permalink: /b7-merge/
+  permalink: /redux-merge/
   type: lesson
 - title: Advanced Topics
   permalink: /advanced/

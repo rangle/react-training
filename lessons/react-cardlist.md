@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Creating a Card List"
-permalink: /a3-cardlist/
+permalink: /react-cardlist/
 ---
 
 ---
