@@ -4,8 +4,6 @@ title: "Redux Thunk"
 permalink: /redux-thunk/
 ---
 
-# Redux Thunk
-
 --
 
 ## What are thunks?

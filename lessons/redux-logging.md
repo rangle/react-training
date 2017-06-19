@@ -4,8 +4,6 @@ title: "Redux Logging"
 permalink: /redux-logging/
 ---
 
-# Redux Middleware
-
 ---
 
 ## What is Redux Middleware?
