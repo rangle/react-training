@@ -17,26 +17,23 @@ toc:
 - title: Introduction to React
   permalink: /a0-react-intro/
   type: lesson
-- title: Getting Started
-  permalink: /a1-start/
-  type: lesson
 - title: Making a Component
-  permalink: /a2-component/
+  permalink: /a1-component/
   type: lesson
 - title: Introducing Robodex
-  permalink: /a3-outline/
+  permalink: /a2-outline/
   type: lesson
 - title: Creating a Card List
-  permalink: /a4-cardlist/
+  permalink: /a3-cardlist/
   type: lesson
 - title: Creating the Container
-  permalink: /a5-container/
+  permalink: /a4-container/
   type: lesson
 - title: Lifecycle Methods
-  permalink: /a6-lifecycles/
+  permalink: /a5-lifecycles/
   type: lesson
 - title: React Summary
-  permalink: /a7-react-summary/
+  permalink: /a6-react-summary/
   type: lesson
 - title: Introduction to Redux
   permalink: /b0-redux-intro/

@@ -26,11 +26,6 @@ permalink: /guide/
 <a id="a0-react-intro"></a>
 ### [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
 
-FIXME
-
-<a id="a1-start"></a>
-### [Getting Started]({{'/a1-start/'|absolute_url}})
-
 - Share requirements for getting setup:
   - Node/NVM
   - Editor
@@ -42,8 +37,8 @@ FIXME
 - Describe `create-react-app` commands before serving the app
 - Serve the app and demo
 
-<a id="a2-component"></a>
-### [Making a Component]({{'/a2-component/'|absolute_url}})
+<a id="a1-component"></a>
+### [Making a Component]({{'/a1-component/'|absolute_url}})
 
 - Explain what components are, including description for rendering and props
 - Explain what JSX is
@@ -64,8 +59,8 @@ FIXME
   - Open up docs to give the audience the opportunity to see it
 - Explain the oddity with `className` and how attribute string binding works
 
-<a id="a3-outline"></a>
-### [Next Steps]({{'/a3-outline/'|absolute_url}})
+<a id="a2-outline"></a>
+### [Next Steps]({{'/a2-outline/'|absolute_url}})
 
 - Demo the final app at the start of this section, making the URL available for trainees
 - Demo without changing `index.js` to illustrate the error produced by missing props
@@ -73,8 +68,8 @@ FIXME
 - Copy and paste individual cards before moving to list format
 - Mention Flow/TypeScript as static analysis options
 
-<a id="a4-cardlist"></a>
-### [Creating a Card List]({{'/a4-cardlist/'|absolute_url}})
+<a id="a3-cardlist"></a>
+### [Creating a Card List]({{'/a3-cardlist/'|absolute_url}})
 
 - Put some robot definitions in `robots.js` and import that rather than hard-coding into `CardList`
 - Update `CardList` to accept the array as the `robots` prop (which is our array of objects)
@@ -85,8 +80,8 @@ FIXME
   - Filter: filter out odd numbers in an array of numbers
   - Reduce: sum up an array of numbers, multiply an array of numbers
 
-<a id="/a5-container/"></a>
-### [Creating the Container]({{'/a5-container/'|absolute_url}})
+<a id="/a4-container/"></a>
+### [Creating the Container]({{'/a4-container/'|absolute_url}})
 
 - Ask learners how to connect search box to parent component before doing work
 - Show details of adding the event handler to `SearchBox` component's `onChange` event
@@ -109,8 +104,8 @@ FIXME
 
 **Side note: This is a good point for a break**
 
-<a id="/a6-lifecycles/"></a>
-### [Lifecycles]({{'/a6-lifecycles/'|absolute_url}})
+<a id="/a5-lifecycles/"></a>
+### [Lifecycles]({{'/a5-lifecycles/'|absolute_url}})
 
 - Summarize the three different categories of lifecycle methods
 - Explain mounting and go into componentDidMount as a place to do AJAX requests
@@ -119,8 +114,8 @@ FIXME
 - Create a robot provider
 - Implement AJAX call in `App.js`'s `componentDidMount` member
 
-<a id="/a7-react-summary/"></a>
-### [React Summary]({{'/a7-react-summary/'|absolute_url}})
+<a id="/a6-react-summary/"></a>
+### [React Summary]({{'/a6-react-summary/'|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
 - Go back and show how what has been done so far connects to what React is in essence:

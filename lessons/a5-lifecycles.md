@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Lifecycle Methods"
-permalink: /a6-lifecycles/
+permalink: /a5-lifecycles/
 ---
 
 ---

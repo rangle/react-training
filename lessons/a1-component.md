@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Making a Component"
-permalink: /a2-component/
+permalink: /a1-component/
 ---
 
 ---
