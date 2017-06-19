@@ -23,8 +23,6 @@ permalink: /guide/
 - Build something that represents the thing you were talking about
   - I.e., building blocks to represent a pipeline of processes
 
-## Part 1: React
-
 <a id="a0-react-intro"></a>
 ### [Introduction to React]({{'/a0-react-intro/'|absolute_url}})
 
@@ -121,8 +119,8 @@ FIXME
 - Create a robot provider
 - Implement AJAX call in `App.js`'s `componentDidMount` member
 
-<a id="/a7-conclusion/"></a>
-### [Conclusion]({{'/a7-conclusion/'|absolute_url}})
+<a id="/a7-react-summary/"></a>
+### [React Summary]({{'/a7-react-summary/'|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
 - Go back and show how what has been done so far connects to what React is in essence:
@@ -131,8 +129,6 @@ FIXME
   - The app is built from the composition of small components
 -  To build interactivity, we combine callbacks (methods) with props, and state
 -  It's best practice as apps get bigger, it solves a huge problem that massive projects have faced in the past. This is why people love React. React has these walls to guide you in this style of mentality. So when you build apps, you are using good practices.
-
-## Part 2: Redux
 
 <a id="/b0-redux-intro/"></a>
 ### [Introduction to Redux]({{'/b0-redux-intro/'|absolute_url}})

@@ -7,18 +7,15 @@ permalink: /a1-start/
 ---
 ## Requirements
 
-- Install the latest Long-term Support version of NPM and Node v6+ from <http://nodejs.org/download/>
+- Install the latest Long-term Support (LTS) version of NPM and Node v6+ from <http://nodejs.org/download/>
   - The download above should install two commands: `node` and `npm`
   - `npm` may require some extra configuration to set permissions properly
-  - Can also install using NVM on Mac/Linux
 
 - A code editor
-  - Any text editor or modern IDE will work
-  - [Atom](https://atom.io/)
-  - [Sublime Text](http://www.sublimetext.com/)
   - [VS Code](https://code.visualstudio.com/)
-  - [Vim](http://www.vim.org/download.php)
   - [WebStorm](https://www.jetbrains.com/webstorm/)
+  - [Sublime Text](http://www.sublimetext.com/)
+  - [Atom](https://atom.io/)
 
 - `create-react-app` command-line tool:
    `npm install --global create-react-app`
