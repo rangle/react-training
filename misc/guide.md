@@ -151,23 +151,29 @@ permalink: /guide/
   - takes a default state, and returns the same state when no action constants are matched
 - emphasize that reducers must be pure, and return a valid state in all cases
 
-<a id="/b3-store/"></a>
-### [Providing a Store]({{'/b3-store/'|absolute_url}})
+<a id="/redux-store/"></a>
+### [Providing a Store]({{'/redux-store/'|absolute_url}})
 
 - Add store using `createStore` in index.js, feeding the robotSearchReducer to it
 - Use debugger to examine contents of store
 - Use `Provider` from react-redux, assign the store to it and then wrap the App component
 - Inspect using Redux DevTools to see if everything has completed alright
 
-<a id="/redux-store/"></a>
-### [Providing a Store]({{'/redux-store/'|absolute_url}})
-
-FIXME
-
 <a id="/redux-connect/"></a>
 ### [Making Connections]({{'/redux-connect/'|absolute_url}})
 
-FIXME
+- Do a simple store.subscribe solution that calls `React.render` on the application
+- Demo the app to see that Redux is working as expected
+- This solution is more limited since it requires re-rendering the whole application for every state change
+- Start with a basic connect solution provided by react-redux
+- Import actions into app.js
+- Create a mapStateToProps function that takes the state and returns an object with searchTerm
+  - Explain how this function is a way of turning redux state into component props
+- Create a mapDispatchToProps function that returns an `onSearchChange` prop that dispatches the changeSearchTerm action
+  - Explain how this function is a way of mapping dispatcher functions to component props
+- Import connect and connect the component to our mapping functions
+- Change the default export to the connected App component
+- This way of implementation makes it so that the component doesn't need to be aware of the implementation details of how it recieves context values, just that it gets them
 
 <a id="/redux-logging/"></a>
 ### [Redux Logging]({{'/redux-logging/'|absolute_url}})
