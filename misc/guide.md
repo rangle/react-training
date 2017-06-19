@@ -24,7 +24,7 @@ permalink: /guide/
   - I.e., building blocks to represent a pipeline of processes
 
 <a id="react-intro"></a>
-### [Introduction to React]({{'/react-intro/'|absolute_url}})
+### [Introduction to React]({{"/react-intro/"|absolute_url}})
 
 - Share requirements for getting setup:
   - Node/NVM
@@ -38,7 +38,7 @@ permalink: /guide/
 - Serve the app and demo
 
 <a id="react-component"></a>
-### [Making a Component]({{'/react-component/'|absolute_url}})
+### [Making a Component]({{"/react-component/"|absolute_url}})
 
 - Explain what components are, including description for rendering and props
 - Explain what JSX is
@@ -60,7 +60,7 @@ permalink: /guide/
 - Explain the oddity with `className` and how attribute string binding works
 
 <a id="react-outline"></a>
-### [Next Steps]({{'/react-outline/'|absolute_url}})
+### [Next Steps]({{"/react-outline/"|absolute_url}})
 
 - Demo the final app at the start of this section, making the URL available for trainees
 - Demo without changing `index.js` to illustrate the error produced by missing props
@@ -69,7 +69,7 @@ permalink: /guide/
 - Mention Flow/TypeScript as static analysis options
 
 <a id="react-cardlist"></a>
-### [Creating a Card List]({{'/react-cardlist/'|absolute_url}})
+### [Creating a Card List]({{"/react-cardlist/"|absolute_url}})
 
 - Put some robot definitions in `robots.js` and import that rather than hard-coding into `CardList`
 - Update `CardList` to accept the array as the `robots` prop (which is our array of objects)
@@ -81,7 +81,7 @@ permalink: /guide/
   - Reduce: sum up an array of numbers, multiply an array of numbers
 
 <a id="/react-container/"></a>
-### [Creating the Container]({{'/react-container/'|absolute_url}})
+### [Creating the Container]({{"/react-container/"|absolute_url}})
 
 - Ask learners how to connect search box to parent component before doing work
 - Show details of adding the event handler to `SearchBox` component's `onChange` event
@@ -105,7 +105,7 @@ permalink: /guide/
 **Side note: This is a good point for a break**
 
 <a id="/react-lifecycles/"></a>
-### [Lifecycles]({{'/react-lifecycles/'|absolute_url}})
+### [Lifecycles]({{"/react-lifecycles/"|absolute_url}})
 
 - Summarize the three different categories of lifecycle methods
 - Explain mounting and go into componentDidMount as a place to do AJAX requests
@@ -115,7 +115,7 @@ permalink: /guide/
 - Implement AJAX call in `App.js`'s `componentDidMount` member
 
 <a id="/react-summary/"></a>
-### [React Summary]({{'/react-summary/'|absolute_url}})
+### [React Summary]({{"/react-summary/"|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
 - Go back and show how what has been done so far connects to what React is in essence:
@@ -126,7 +126,7 @@ permalink: /guide/
 -  It's best practice as apps get bigger, it solves a huge problem that massive projects have faced in the past. This is why people love React. React has these walls to guide you in this style of mentality. So when you build apps, you are using good practices.
 
 <a id="/redux-intro/"></a>
-### [Introduction to Redux]({{'/redux-intro/'|absolute_url}})
+### [Introduction to Redux]({{"/redux-intro/"|absolute_url}})
 
 - Start by going over what problems Redux tries to address
   - State is getting more complicated
@@ -141,7 +141,7 @@ permalink: /guide/
 - Show that no store has been detected yet
 
 <a id="/redux-action-reducer/"></a>
-### [Actions and Reducers]({{'/redux-action-reducer/'|absolute_url}})
+### [Actions and Reducers]({{"/redux-action-reducer/"|absolute_url}})
 
 - Create a reducers folder and create a robotSearchReducer
 - Create a constants file and export a changeSearchTerm action
@@ -152,7 +152,7 @@ permalink: /guide/
 - emphasize that reducers must be pure, and return a valid state in all cases
 
 <a id="/redux-store/"></a>
-### [Providing a Store]({{'/redux-store/'|absolute_url}})
+### [Providing a Store]({{"/redux-store/"|absolute_url}})
 
 - Add store using `createStore` in index.js, feeding the robotSearchReducer to it
 - Use debugger to examine contents of store
@@ -160,7 +160,7 @@ permalink: /guide/
 - Inspect using Redux DevTools to see if everything has completed alright
 
 <a id="/redux-connect/"></a>
-### [Making Connections]({{'/redux-connect/'|absolute_url}})
+### [Making Connections]({{"/redux-connect/"|absolute_url}})
 
 - Do a simple store.subscribe solution that calls `React.render` on the application
 - Demo the app to see that Redux is working as expected
@@ -176,7 +176,7 @@ permalink: /guide/
 - This way of implementation makes it so that the component doesn't need to be aware of the implementation details of how it recieves context values, just that it gets them
 
 <a id="/redux-logging/"></a>
-### [Redux Logging]({{'/redux-logging/'|absolute_url}})
+### [Redux Logging]({{"/redux-logging/"|absolute_url}})
 
 - Introduce the concept of Redux middleware
 - It's similar to middleware in other libraries but it runs between the action and reducer
@@ -186,7 +186,7 @@ permalink: /guide/
 - Apply the middleware and demo the logger to see that it logs to the console
 
 <a id="/redux-thunk/"></a>
-### [Redux Thunk]({{'/redux-thunk/'|absolute_url}})
+### [Redux Thunk]({{"/redux-thunk/"|absolute_url}})
 
 - Introduce the concept of thunks as ways to delay evaluation and execution
 - Show some quick examples with plain JS
@@ -215,7 +215,7 @@ permalink: /guide/
 - Replace the contents of componentDidMount to call the action to fetch robots
 
 <a id="/redux-merge/"></a>
-### [Merging]({{'/redux-merge/'|absolute_url}})
+### [Merging]({{"/redux-merge/"|absolute_url}})
 
 - Notify that mergeProps is one way to intercept props passed into a component and use that when interacting with state
 - How we'll use it in this case is to help us with filtering robots

@@ -37,7 +37,7 @@ permalink: /advanced/
 
 -   A11y
     -   What is A11y?
-        -   It's short for Accessibility (starts with ‘A', then 11 chars, and ends with ‘y)
+        -   It's short for Accessibility (starts with "A", then 11 chars, and ends with "y")
     -   React Intl:
         <https://www.npmjs.com/package/react-intl>
     -   What do you need? Translations? Locale time/money?

@@ -13,7 +13,7 @@ permalink: /react-lifecycles/
 ---
 ## Categories
 
-![Lifecycle Methods]({{'img/reactjs_component_lifecycle_functions.png'|absolute_url}})
+![Lifecycle Methods]({{"img/reactjs_component_lifecycle_functions.png"|absolute_url}})
 
 FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png)  with a Rangle version
 
@@ -57,7 +57,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    apiCall('https://jsonplaceholder.typicode.com/users')
+    apiCall("https://jsonplaceholder.typicode.com/users")
       .then(response =>
         this.setState({
           robots: response,

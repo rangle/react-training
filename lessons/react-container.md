@@ -22,7 +22,7 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      searchTerm: '',
+      searchTerm: "",
       robots: robots
     }
   }
@@ -35,7 +35,7 @@ class App extends Component {
       robot.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     return (
-      <div className='tc'>
+      <div className="tc">
         <h1>RoboDex</h1>
         <SearchBox onSearchChange={this.onSearchChange}/>
         <CardList robots={filteredRobots} />
@@ -62,10 +62,10 @@ class App extends Component {
 const SearchBox = (props) => {
   const { onSearchChange } = props;
   return (
-    <div className='pa2'>
-      <input className='pa2'
-        type='search'
-        placeholder='search Robots...'
+    <div className="pa2">
+      <input className="pa2"
+        type="search"
+        placeholder="search Robots..."
         onChange={onSearchChange}
       />
     </div>

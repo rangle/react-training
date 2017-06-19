@@ -14,9 +14,9 @@ permalink: /react-cardlist/
 export const robots = [
   {
     id: 1,
-    name: 'Leanne Graham',
-    username: 'Bret',
-    email: 'Sincere@april.biz'
+    name: "Leanne Graham",
+    username: "Bret",
+    email: "Sincere@april.biz"
   },
   ...
 }
@@ -32,7 +32,7 @@ ReactDOM.render(
   <div>
     <CardList robots={robots} />
   </div>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 ```
 

@@ -58,10 +58,10 @@ permalink: /react-intro/
 ---
 ## Create React App Commands
 
-- Use `npm command` to run
-- `start`: serves the application in a development environment
+- `npm start`: serves the application in a development environment
   - Code changes are automatically refreshed in the browser
-- `build`: builds the application for deployment and copies the files to the `public` folder
-- `test`: runs the application's tests
-- `eject`: ejects the build configuration
-   - Only for advanced users who need customization
+- `npm build`: builds the application for deployment and copies the files to the `public` folder
+- `npm test`: runs the application's tests
+- `npm eject`: ejects the build configuration
+   - Don't do this!
+   - (for advanced users only) Don't do this *yet*

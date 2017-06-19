@@ -12,7 +12,7 @@ permalink: /redux-action-reducer/
 
 ```
 export const setSearchTerm = (term) =>
-({ type: ‘SET_SEARCH_TERM': payload: term })
+({ type: "SET_SEARCH_TERM", payload: term })
 ```
 
 -   Use a hard-coded string at first for type, but then explain why it's better to use a constant
@@ -20,7 +20,7 @@ export const setSearchTerm = (term) =>
 -   Edit the constants file to export a new constant for the action type
 
 ```
-export const SET_SEARCH_TERM = ‘SET_SEARCH_TERM';
+export const SET_SEARCH_TERM = "SET_SEARCH_TERM";
 ```
 
 -   Go back to the actions file
