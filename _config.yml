@@ -35,8 +35,8 @@ toc:
 - title: Lifecycle Methods
   permalink: /a6-lifecycles/
   type: lesson
-- title: Conclusion
-  permalink: /a7-conclusion/
+- title: React Summary
+  permalink: /a7-react-summary/
   type: lesson
 - title: Introduction to Redux
   permalink: /b0-redux-intro/

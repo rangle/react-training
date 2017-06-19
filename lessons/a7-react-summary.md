@@ -1,7 +1,7 @@
 ---
 layout: lesson
 title: "Conclusion"
-permalink: /a7-conclusion/
+permalink: /a7-react-summary/
 ---
 
 - Use NPM or Yarn for package management
