@@ -85,17 +85,6 @@ export const Greet = ({ company }) => <div>Hello {company}</div>;
 - Be careful *not* to call functions with side-effects
 
 ---
-## Styling With Tachyons
-
-Tachyons is a CSS toolkit that is:
-
-- Atomic: style rules are small and serve one purpose, which makes them easy to combine
-- Class driven: style rules are applied using classes
-- Responsive: all style rules support responsive design
-- Rule names reflect effect rather than the semantics of the elements being styled
-- FIXME: example of Tachyons styling
-
----
 ## Styling
 
 - FIXME: explain `className`
