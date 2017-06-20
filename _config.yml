@@ -14,7 +14,7 @@ toc:
 - title: Overview
   permalink: /overview/
   type: lesson
-- title: Introduction to React
+- title: Getting Started
   permalink: /react-intro/
   type: lesson
 - title: Making a Component

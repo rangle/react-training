@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Advanced Topics"
 permalink: /advanced/
 ---
 

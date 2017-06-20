@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Redux Thunk"
 permalink: /redux-thunk/
 ---
 

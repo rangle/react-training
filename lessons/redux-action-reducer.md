@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Actions and Reducers"
 permalink: /redux-action-reducer/
 ---
 

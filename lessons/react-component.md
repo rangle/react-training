@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Making a Component"
 permalink: /react-component/
 ---
 

@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Lifecycle Methods"
 permalink: /react-lifecycles/
 ---
 

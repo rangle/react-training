@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Introduction to Redux"
 permalink: /redux-intro/
 ---
 

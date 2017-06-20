@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Creating the Container"
 permalink: /react-container/
 ---
 

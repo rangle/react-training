@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Introducing Robodex"
 permalink: /react-outline/
 ---
 

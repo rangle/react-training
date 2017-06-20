@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Getting Started"
 permalink: /react-intro/
 ---
 

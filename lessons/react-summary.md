@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Conclusion"
 permalink: /react-summary/
 ---
 

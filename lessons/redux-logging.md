@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Redux Logging"
 permalink: /redux-logging/
 ---
 

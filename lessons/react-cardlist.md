@@ -1,6 +1,5 @@
 ---
 layout: lesson
-title: "Creating a Card List"
 permalink: /react-cardlist/
 ---
 
