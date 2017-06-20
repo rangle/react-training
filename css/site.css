@@ -10,19 +10,20 @@ div.questions {
 }
 
 .message {
-  background: #404040;
+  background: #EFF0F1;
   color: #FFFFFF;
-  position: absolute;
+  position: fixed;
   right: -250px;
   top: 0;
   width: 250px;
-  height: 100%;
-  min-height: 100%;
-  padding-top: 10px;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   transition: right 300ms;
   overflow: hidden;
   box-sizing: border-box;
   z-index: 3;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
 }
 
 #toggle {
@@ -36,13 +37,15 @@ div.questions {
 #toggle + label {
   position: absolute;
   cursor: pointer;
-  padding-left: 5px;
+  padding: 10px 15px;
+  margin-top: 10px;
   text-align: center;
   cursor: pointer;
 }
 
 #toggle + label:after {
   content: '\2630';
+  color: #696969;
   font-size: 1.5em;
 }
 
@@ -57,4 +60,17 @@ div.questions {
 #toggle:checked + label:after {
   content: '\2630';
   font-size: 1.5em;
+}
+
+.main-background {
+  background: url('../img/title-slide.jpg') no-repeat;
+  background-size: cover;
+}
+
+a {
+  color: #696969;
+}
+
+a:hover {
+  color: #696969;
 }
