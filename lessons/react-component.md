@@ -5,6 +5,7 @@ permalink: /react-component/
 ---
 
 ---
+
 ## What Are Components?
 
 - The core building blocks of React applications
@@ -16,6 +17,7 @@ permalink: /react-component/
   - But we'll use that since we're doing this tutorial in the browser
 
 ---
+
 ## JSX
 
 - Allows HTML-style tags to be freely mixed with JavaScript
@@ -25,6 +27,7 @@ permalink: /react-component/
   - Because it gets turned into pure JavaScript
 
 ---
+
 ## Creating a Component
 
 - Create a basic "hello world" component
@@ -65,6 +68,7 @@ export default Greet;
   - `Greet.js` will (almost always) export `Greet` and only `Greet`
 
 ---
+
 ## ReactDOM
 
 - Provides a way for elements created by React to be injected into the DOM
@@ -73,6 +77,7 @@ export default Greet;
 - `render` inserts the rendered component to the matched element
 
 ---
+
 ## Props
 
 - Props (properties) are data passed into a component from a parent component
@@ -101,6 +106,7 @@ export const Greet = (props) => <div>Hello {props.company}</div>;
 ```
 
 ---
+
 ## Props, Destructuring and JSX
 
 ```js
@@ -111,6 +117,7 @@ export const Greet = ({ company }) => <div>Hello {company}</div>;
   - Not the same as the use of `{}` for interpolation
 
 ---
+
 ## Styling
 
 - Have to use `className` instead of `class` to specify that property in JSX

@@ -5,12 +5,14 @@ permalink: /react-lifecycles/
 ---
 
 ---
+
 ## What Do We Mean by "Lifecycle"?
 
 - Lifecycles are phases of an object's existence where we might want to add or replace logic
 - In some cases that logic replaces existing default logic
 
 ---
+
 ## Categories
 
 ![Lifecycle Methods]({{"img/reactjs_component_lifecycle_functions.png"|absolute_url}})
@@ -18,6 +20,7 @@ permalink: /react-lifecycles/
 FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png)  with a Rangle version
 
 ---
+
 ## Mounting
 
 - This group called when a component is created and inserted into the DOM
@@ -29,6 +32,7 @@ FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/rea
   - Use constructor otherwise.
 
 ---
+
 ## Updating
 
 - This group called When a component's props or state has changed.
@@ -41,6 +45,7 @@ FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/rea
 - `componentWillReceiveProps`: called before a component has received props whose values have changed
 
 ---
+
 ## Unmounting
 
 - Called when a component is destroyed and removed from the DOM
@@ -48,6 +53,7 @@ FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/rea
   - E.g., remove 3rd party listeners, unsubscribe, etc.
 
 ---
+
 ## Using These
 
 ```js

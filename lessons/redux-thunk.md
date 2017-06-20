@@ -4,9 +4,9 @@ title: "Redux Thunk"
 permalink: /redux-thunk/
 ---
 
---
+---
 
-## What are thunks?
+## What Are Thunks?
 
 - Thunks are functions that serve to delay execution of some code
 - Useful for moving logic around to be executed asynchronously

@@ -5,12 +5,14 @@ permalink: /react-intro/
 ---
 
 ---
+
 ## What is React?
 
 - A Javascript UI framework based on declarative views
 - Generate page with nested function calls that take data as input and produce HTML as output
 
 ---
+
 ## What Problems Does It Solve?
 
 - Older UI frameworks built DOM trees imperatively
@@ -20,6 +22,7 @@ permalink: /react-intro/
 - Tied tightly to browsers (in a world with a growing variety of devices)
 
 ---
+
 ## Core Architectural Principles
 
 - DOM nodes are no longer a source of data
@@ -28,6 +31,7 @@ permalink: /react-intro/
 - It's faster: React only re-renders those parts of the view that need to be updated
 
 ---
+
 ## Requirements
 
 - Install the latest Long-term Support (LTS) version of NPM and Node v6+ from <http://nodejs.org/download/>
@@ -44,6 +48,7 @@ permalink: /react-intro/
    `npm install --global create-react-app`
 
 ---
+
 ## Create React App
 
 - Command-line tool that creates a React application with a standard structure and dependencies
@@ -56,6 +61,7 @@ permalink: /react-intro/
 - `public`: the build target path
 
 ---
+
 ## Create React App Commands
 
 - `npm start`: serves the application in a development environment

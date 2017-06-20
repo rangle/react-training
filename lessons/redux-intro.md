@@ -5,6 +5,7 @@ permalink: /redux-intro/
 ---
 
 ---
+
 ## The State Problem
 
 - Applications are progressively becoming more complex
@@ -14,6 +15,7 @@ permalink: /redux-intro/
 - Server side rendering, caching and distributed data add more complexity
 
 ---
+
 ## What is Redux
 
 Redux is a predictable state container for JavaScript apps.
@@ -23,6 +25,7 @@ Redux is a predictable state container for JavaScript apps.
 - Removes two-way interaction in favor of a uni-directional data flow
 
 ---
+
 ## The 3 principles
 
 - Single source of truth
@@ -30,6 +33,7 @@ Redux is a predictable state container for JavaScript apps.
 - Changes are made using pure functions
 
 ---
+
 ## How Redux Works
 
 TODO: Add rangle version of this diagram
@@ -38,6 +42,7 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 
 
 ---
+
 ## Actions
 
 - The sole mechanism for inducing changes in state
@@ -45,6 +50,7 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 
 
 ---
+
 ## Reducer
 
 - The method by which state is actually changed
@@ -52,6 +58,7 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 - Follows the same data flow as the general programming concept of the "reducer"
 
 ---
+
 ## Store
 
 - Where the entire application state exists
@@ -59,6 +66,7 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 - In larger applications, the store will be split into multiple slices
 
 ---
+
 ## Getting Redux
 
 - Redux is available through npm: `npm install redux`
@@ -66,6 +74,7 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 - react-redux makes integration easier but is not absolutely necessary
 
 ---
+
 ## Redux DevTools
 
 - Redux DevTools is a debugging tool that allows you to:

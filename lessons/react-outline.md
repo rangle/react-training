@@ -5,6 +5,7 @@ permalink: /react-outline/
 ---
 
 ---
+
 ## Goal
 
 - We are going to make a Robodoex
@@ -12,6 +13,7 @@ permalink: /react-outline/
 FIXME: screenshot
 
 ---
+
 ## Creating a Card
 
 - Delete `HelloComponent` and start building the app with a `Card` component
@@ -30,6 +32,7 @@ FIXME: screenshot
 - Convert the hard-coded values into `id`, `name`, and `email` props
 
 ---
+
 ## Customizing the Cards
 
 - Then add JSON data to make each card different
@@ -37,6 +40,7 @@ FIXME: screenshot
 - Use destructuring to get values out of props
 
 ---
+
 ## Static Checking with PropTypes
 
 - Install `prop-types` package and implement this:
@@ -52,6 +56,7 @@ Card.propTypes = {
 - Checks the properties being passed into components
 
 ---
+
 ## Styling
 
 - Add classes to the `Card` component

@@ -5,6 +5,7 @@ permalink: /react-container/
 ---
 
 ---
+
 ## Goals
 
 - Create a `SearchBox` component to list only robots that match the search term
@@ -15,6 +16,7 @@ permalink: /react-container/
   - Use the parent as a common third party to hold the data
 
 ---
+
 ## Main Application
 
 ```js
@@ -46,6 +48,7 @@ class App extends Component {
 ```
 
 ---
+
 ## How It Works
 
 - Note how `onSearchChange` is passed down to `SearchBox`
@@ -56,6 +59,7 @@ class App extends Component {
   - Again, `CardList` doesn't care which list it is displaying
 
 ---
+
 ## Search Box
 
 ```js

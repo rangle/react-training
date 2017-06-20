@@ -5,6 +5,7 @@ permalink: /react-cardlist/
 ---
 
 ---
+
 ## Goals
 
 - Copying and pasting cards is tedious, so we create a `CardList` component
@@ -23,6 +24,7 @@ export const robots = [
 ```
 
 ---
+
 ## Connecting the Pieces
 
 - Then pass that array to `CardList` in `index.js`
@@ -37,6 +39,7 @@ ReactDOM.render(
 ```
 
 ---
+
 ## The Card List
 
 - `CardList` transforms the array of values into an array of views using `map`
@@ -61,6 +64,7 @@ const CardList = ({ robots }) => {
 ```
 
 ---
+
 ## PropTypes
 
 - Tell React that the `robots` array is required
