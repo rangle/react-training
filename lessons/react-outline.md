@@ -7,9 +7,9 @@ permalink: /react-outline/
 
 ## Goal
 
-- We are going to make a Robodoex
+- We are going to make a Robodex
 
-FIXME: screenshot
+![Robodex Screenshot]({{'img/robodex-screenshot.png'|absolute_url}})
 
 ---
 
