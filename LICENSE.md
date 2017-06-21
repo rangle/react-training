@@ -3,7 +3,7 @@ layout: page
 permalink: "/license/"
 ---
 
-Copyright (c) 2017 Rangle.io.
+Copyright &copy; {{site.copyrightyear}} {{site.author}}.
 
 This work is licensed under the Creative Commons Attribution 3.0
 Unported license (CC-BY-3.0).  You are free:

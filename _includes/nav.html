@@ -1,6 +1,5 @@
-<div align="center">
-  {% if include.copyright %}<hr/>{% endif %}
-  {% unless page.manual %}
+{% unless page.manual %}
+  <div align="center">
     <div class="row">
       <nav aria-label="...">
         <ul class="pager">
@@ -9,7 +8,6 @@
           {% else %}
             <li class="previous"><a href="{{'/'|absolute_url}}"><span aria-hidden="true">&larr;</span>Main</a></li>
           {% endif %}
-          <!-- <a href="{{'/'|absolute_url}}">{{site.title}}</a> -->
           {% if include.next %}
             <li class="next"><a href="{{include.next|absolute_url}}">Next <span aria-hidden="true">&rarr;</span></a></li>
           {% else %}
@@ -18,18 +16,5 @@
         </ul>
       </nav>
     </div>
-  {% endunless %}
-  {% if include.copyright %}
-  <div class="row">
-    <span class="col-md-2" align="left">
-    </span>
-    <span class="col-md-8" align="center">
-      <em>
-        &copy; {{site.author}} - see <a href="{{'/license/'|absolute_url}}">the license</a> for terms of use.
-      </em>
-    </span>
-    <span class="col-md-2" align="right">
-    </span>
   </div>
-  {% endif %}
-</div>
+{% endunless %}

@@ -34,17 +34,19 @@
     <input type="checkbox" name="toggle" id="toggle" />
     <label for="toggle"></label>
     <div class="container">
-      {% include nav.html copyright=false previous=previous.permalink next=next.permalink %}
+      {% include nav.html previous=previous.permalink next=next.permalink %}
       {% if this %}<h1>{{this.title}}</h1>{% endif %}
       {% if this.type == "lesson" %}{% include listblock.html title="Questions" items=this.questions class="questions" %}{% endif %}
 {{content}}
       {% if this.type == "lesson" %}{% include listblock.html title="Key Points" items=this.keypoints class="keypoints" %}{% endif %}
-      {% include nav.html copyright=true previous=previous.permalink next=next.permalink %}
+      {% include nav.html previous=previous.permalink next=next.permalink %}
+      <hr/>
+      <div align="center">
+        Copyright &copy; {{site.copyrightyear}} {{site.author}} &ndash; see <a href="{{'/license/'|absolute_url}}">the license</a> for terms of use.
+      </div>
     </div>
     <div class="message">
-      <ul class="list-unstyled">
-        <li><a href="/">Introduction to React</a></li>
-      </ul>
+      <p><a href="{{'/'|absolute_url}}">{{site.title}}</a></p>
       {% include toc.html %}
     </div>
   </body>
