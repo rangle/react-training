@@ -135,9 +135,9 @@ permalink: /guide/
 - Use diagram to explain the main abstractions in short detail and how all state updates must follow this pattern in order to achieve benefits of predictability
 - Provide more context regarding the roles of Actions, Reducer and Store in more detail
 - Install redux and react-redux into the robodex app
-- Go to the Redux Devtools Extension readme to give trainees the option to download the version they need
+- Go to the [Redux Devtools Extension][redux-devtools] README to give trainees the option to download the version they need
 - Go to Chrome Store, install and show how to confirm it's been installed correctly
-- Show that no store has been detected yet
+- Show that no Redux store has been detected yet
 
 <a id="/redux-action-reducer/"></a>
 ### [Actions and Reducers]({{"/redux-action-reducer/"|absolute_url}})
@@ -222,3 +222,5 @@ permalink: /guide/
 - Add a new filteredRobots prop that filters the list of robots based on the search term
 - Update the connect call to include mergeProps as the third param
 - Use the filteredRobots prop in the CardList component to render the Cards
+
+[redux-devtools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd

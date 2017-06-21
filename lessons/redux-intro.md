@@ -7,54 +7,58 @@ permalink: /redux-intro/
 
 ## The State Problem
 
-- Applications are progressively becoming more complex
-- GUI based applications have many different points of interaction, leading to different sources of state updates
+- Applications are becoming more complex
+- GUI applications have many different points of interaction, leading to different sources of state updates
 - Web applications have to reconcile state between client and server
-- Asynchronous nature of JavaScript and server side calls introduces additional points of failure
-- Server side rendering, caching and distributed data add more complexity
+- Asynchronous nature of JavaScript and server-side calls introduces additional points of failure
+- Server side rendering, caching, and distributed data add more complexity
 
 ---
 
 ## What is Redux
 
-Redux is a predictable state container for JavaScript apps.
+<div align="center" markdown="1">
+  <em>Redux is a predictable state container for JavaScript apps.</em>
+</div>
 
 - A framework for managing state
-- Streamlines state interactions into a common pattern
+- Streamlines state interactions using a common pattern
 - Removes two-way interaction in favor of a uni-directional data flow
 
 ---
 
-## The 3 principles
+## Three Principles
 
-- Single source of truth
-- State is read only
-- Changes are made using pure functions
+- A single source of truth
+- State is read-only
+- State is updated using pure functions
 
 ---
 
 ## How Redux Works
 
-TODO: Add rangle version of this diagram
+FIXME: replace [this diagram](http://www.mrscottmcallister.com/assets/img/redux-flow.png) with a Rangle version
 
-http://www.mrscottmcallister.com/assets/img/redux-flow.png
-
+![Redux Flow]({{'img/redux-flow.png'|absolute_url}})
 
 ---
 
 ## Actions
 
 - The sole mechanism for inducing changes in state
-- Dispatched whenever some event happens, eg. button clicked, page has finished loading, ajax call has returned data
-
+- Application dispatches actions whenever an event happens
+  - E.g., button clicked, page has finished loading, AJAX call has returned data
+- Actions contain:
+  - Something that identifies the change
+  - Any additional information needed to update the state
 
 ---
 
 ## Reducer
 
 - The method by which state is actually changed
-- Takes the "before" state and returns the "after" state
-- Follows the same data flow as the general programming concept of the "reducer"
+- Takes the "before" state and the action and returns the "after" state
+- Follows the same data flow as the general programming concept of a "reducer"
 
 ---
 
@@ -62,21 +66,26 @@ http://www.mrscottmcallister.com/assets/img/redux-flow.png
 
 - Where the entire application state exists
 - An application should only have one store
-- In larger applications, the store will be split into multiple slices
+- In larger applications, the store will have several parts
+  - Partitioning state is a key architectural decision
 
 ---
 
 ## Getting Redux
 
-- Redux is available through npm: `npm install redux`
-- There is also a package that provides easy interoperability between redux and react called _react-redux_. `npm install react-redux`
-- react-redux makes integration easier but is not absolutely necessary
+- Redux is available via NPM
+  - `npm install redux`
+- There is also a package that provides easy interoperability between Redux and React called `react-redux`
+  - `npm install react-redux`
+  - Makes integration easier but is not absolutely necessary
 
 ---
 
 ## Redux DevTools
 
-- Redux DevTools is a debugging tool that allows you to:
-  - visualize your application's current state
-  - move forward and backwards throughout your state (time travelling!)
+- [Redux DevTools][redux-devtools] is a debugging tool that allows you to:
+  - Visualize your application's current state
+  - Move forward and backwards throughout your state (time travelling!)
 - Available for Chrome, Firefox and Electron and other environments
+
+[redux-devtools]: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
