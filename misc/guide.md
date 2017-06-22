@@ -142,13 +142,14 @@ permalink: /guide/
 <a id="/redux-action-reducer/"></a>
 ### [Actions and Reducers]({{"/redux-action-reducer/"|absolute_url}})
 
-- Create a reducers folder and create a robotSearchReducer
-- Create a constants file and export a changeSearchTerm action
-- Create an actions folder and create a `CHANGE_SEARCHTERM` action creator
-- Update reducer that:
-  - handles the action
-  - takes a default state, and returns the same state when no action constants are matched
-- emphasize that reducers must be pure, and return a valid state in all cases
+- Create `constants.js` to define the action identifier
+- Then create `actions.js` to generate the action object
+- And then create the reducer in `reducers.js`
+  - Emphasize state + action => new state object
+  - Point out use of default values for parameters
+  - Point out that reducer leaves state alone if it doesn't recognize the action
+    - So reducers can be chained together
+- This code is not (yet) coupled to the application at the end of this episode
 
 <a id="/redux-store/"></a>
 ### [Providing a Store]({{"/redux-store/"|absolute_url}})
