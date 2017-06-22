@@ -14,10 +14,19 @@ repository: <USERNAME>/<PROJECT>
 toc:
 - title: Overview
   permalink: /overview/
-  type: lesson
+  type: misc
 - title: Getting Started
   permalink: /react-intro/
   type: lesson
+  questions:
+  - "What is React?"
+  - "What problems does it solve?"
+  - "What do I need to install to start using it?"
+  - "How do I create a starter application?"
+  keypoints:
+  - "React is a declarative JavaScript view framework."
+  - "React's development dependencies can be installed using NPM."
+  - "Use `create-react-app` to generate a starter application."
 - title: Making a Component
   permalink: /react-component/
   type: lesson

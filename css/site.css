@@ -1,12 +1,12 @@
-div.guide {
+blockquote {
+  font-size: 100%;
 }
 
-div.keypoints {
-  background-color: #F0F0F0
-}
-
-div.questions {
-  background-color: #F0F0F0
+div.keypoints, div.questions {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 1em;
+  border: 3px solid #707070;
 }
 
 .message {
@@ -45,7 +45,7 @@ div.questions {
 
 #toggle + label:after {
   content: '\2630';
-  color: #696969;
+  color: #707070;
   font-size: 1.5em;
 }
 
@@ -68,9 +68,9 @@ div.questions {
 }
 
 a {
-  color: #696969;
+  color: #707070;
 }
 
 a:hover {
-  color: #696969;
+  color: #707070;
 }
