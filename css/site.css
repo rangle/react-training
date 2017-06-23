@@ -7,6 +7,12 @@ div.keypoints, div.questions {
   padding-right: 0.5em;
   margin-bottom: 1em;
   border: 3px solid #707070;
+  border-radius: 10px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 90%;
 }
 
 .message {
@@ -62,15 +68,11 @@ div.keypoints, div.questions {
   font-size: 1.5em;
 }
 
-.main-background {
-  background: url('../img/title-slide.jpg') no-repeat;
-  background-size: cover;
-}
-
 a {
   color: #707070;
 }
 
-a:hover {
-  color: #707070;
+.main-background {
+  background: url('../img/title-slide.jpg') no-repeat;
+  background-size: cover;
 }

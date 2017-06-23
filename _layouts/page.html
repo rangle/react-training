@@ -41,7 +41,7 @@
       {% if this.type == "lesson" %}{% include listblock.html title="Key Points" items=this.keypoints class="keypoints" %}{% endif %}
       {% include nav.html previous=previous.permalink next=next.permalink %}
       <hr/>
-      <div align="center">
+      <div class="copyright">
         Copyright &copy; {{site.copyrightyear}} {{site.author}} &ndash; see <a href="{{'/license/'|absolute_url}}">the license</a> for terms of use.
       </div>
     </div>
