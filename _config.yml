@@ -30,6 +30,17 @@ toc:
 - title: Making a Component
   permalink: /react-component/
   type: lesson
+  questions:
+  - "What is a React component?"
+  - "How can I combine HTML and JavaScript to create a component?"
+  - "How are HTML properties passed into components?"
+  keypoints:
+  - "A component is a function or class that transforms properties and state into a display."
+  - "Use JSX to mix HTML and JavaScript."
+  - "Use `{...}` to interpolate JavaScript expressions into HTML in JSX."
+  - "Use modern 'fat arrow' notation to write functions."
+  - "HTML properties are passed to components in a `props` object parameter."
+  - "Use `className` instead of `class` in JSX."
 - title: Introducing Robodex
   permalink: /react-outline/
   type: lesson
