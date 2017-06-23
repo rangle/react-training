@@ -64,6 +64,15 @@ toc:
 - title: Creating the Container
   permalink: /react-container/
   type: lesson
+  questions:
+  - "How should I manage multiple components?"
+  - "How should I handle user interaction in React?"
+  - "How expensive is this?"
+  keypoints:
+  - "Define a class with methods for handling interactions."
+  - "Pass the class's methods to stateless components."
+  - "Send interactions up the component tree and data down."
+  - "Let React worry about minimizing rendering costs."
 - title: Lifecycle Methods
   permalink: /react-lifecycles/
   type: lesson
