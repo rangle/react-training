@@ -44,6 +44,16 @@ toc:
 - title: Introducing Robodex
   permalink: /react-outline/
   type: lesson
+  questions:
+  - "What are we going to build?"
+  - "How do I display a single robot?"
+  - "How do I display multiple robots?"
+  - "How do I check that required properties are being provided?"
+  keypoints:
+  - "Every component must have a single root element."
+  - "Use static data for early prototyping."
+  - "Use the `prop-types` package and `classname.proptypes` to check properties."
+  - Use JavaScript string interpolation with JSX expression interpolation."
 - title: Creating a Card List
   permalink: /react-cardlist/
   type: lesson
@@ -80,8 +90,11 @@ toc:
 - title: Advanced Topics
   permalink: /advanced/
   type: lesson
+- permalink: /summary/
+  title: Summary
+  type: misc
 - permalink: /guide/
-  title: Guide
+  title: "Instructors' Guide"
   type: misc
 - permalink: /gloss/
   title: Glossary
