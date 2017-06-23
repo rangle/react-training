@@ -47,16 +47,20 @@ toc:
   questions:
   - "What are we going to build?"
   - "How do I display a single robot?"
-  - "How do I display multiple robots?"
   - "How do I check that required properties are being provided?"
   keypoints:
   - "Every component must have a single root element."
   - "Use static data for early prototyping."
   - "Use the `prop-types` package and `classname.proptypes` to check properties."
-  - Use JavaScript string interpolation with JSX expression interpolation."
+  - "Use JavaScript string interpolation with JSX expression interpolation."
 - title: Creating a Card List
   permalink: /react-cardlist/
   type: lesson
+  questions:
+  - "How do I display multiple robots?"
+  keypoints:
+  - "Use nested components, each with a single job."
+  - "Use `map` to transform data into displays."
 - title: Creating the Container
   permalink: /react-container/
   type: lesson
