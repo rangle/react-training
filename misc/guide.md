@@ -79,7 +79,7 @@ permalink: /guide/
   - Filter: filter out odd numbers in an array of numbers
   - Reduce: sum up an array of numbers, multiply an array of numbers
 
-<a id="/react-container/"></a>
+<a id="react-container"></a>
 ### [Creating the Container]({{"/react-container/"|absolute_url}})
 
 - Ask learners how to connect search box to parent component before doing work
@@ -103,7 +103,7 @@ permalink: /guide/
 
 **Side note: This is a good point for a break**
 
-<a id="/react-lifecycles/"></a>
+<a id="react-lifecycles"></a>
 ### [Lifecycles]({{"/react-lifecycles/"|absolute_url}})
 
 - Summarize the three different categories of lifecycle methods
@@ -113,7 +113,7 @@ permalink: /guide/
 - Create a robot provider
 - Implement AJAX call in `App.js`'s `componentDidMount` member
 
-<a id="/react-summary/"></a>
+<a id="react-summary"></a>
 ### [React Summary]({{"/react-summary/"|absolute_url}})
 
 - Go over each of the main concepts of React: components, state, props and JSX. This is to show how simple React really is; and how it isn't that complicated.
@@ -124,7 +124,7 @@ permalink: /guide/
 -  To build interactivity, we combine callbacks (methods) with props, and state
 -  It's best practice as apps get bigger, it solves a huge problem that massive projects have faced in the past. This is why people love React. React has these walls to guide you in this style of mentality. So when you build apps, you are using good practices.
 
-<a id="/redux-intro/"></a>
+<a id="redux-intro"></a>
 ### [Introduction to Redux]({{"/redux-intro/"|absolute_url}})
 
 - Start by going over what problems Redux tries to address
@@ -139,7 +139,7 @@ permalink: /guide/
 - Go to Chrome Store, install and show how to confirm it's been installed correctly
 - Show that no Redux store has been detected yet
 
-<a id="/redux-action-reducer/"></a>
+<a id="redux-action-reducer"></a>
 ### [Actions and Reducers]({{"/redux-action-reducer/"|absolute_url}})
 
 - Create `constants.js` to define the action identifier
@@ -151,7 +151,7 @@ permalink: /guide/
     - So reducers can be chained together
 - This code is not (yet) coupled to the application at the end of this episode
 
-<a id="/redux-store/"></a>
+<a id="redux-store"></a>
 ### [Providing a Store]({{"/redux-store/"|absolute_url}})
 
 - Add store using `createStore` in index.js, feeding the robotSearchReducer to it
@@ -159,7 +159,7 @@ permalink: /guide/
 - Use `Provider` from react-redux, assign the store to it and then wrap the App component
 - Inspect using Redux DevTools to see if everything has completed alright
 
-<a id="/redux-connect/"></a>
+<a id="redux-connect"></a>
 ### [Making Connections]({{"/redux-connect/"|absolute_url}})
 
 - Do a simple store.subscribe solution that calls `React.render` on the application
@@ -175,7 +175,7 @@ permalink: /guide/
 - Change the default export to the connected App component
 - This way of implementation makes it so that the component doesn't need to be aware of the implementation details of how it recieves context values, just that it gets them
 
-<a id="/redux-logging/"></a>
+<a id="redux-logging"></a>
 ### [Redux Logging]({{"/redux-logging/"|absolute_url}})
 
 - Introduce the concept of Redux middleware
@@ -185,7 +185,7 @@ permalink: /guide/
 - Import and create the logger
 - Apply the middleware and demo the logger to see that it logs to the console
 
-<a id="/redux-thunk/"></a>
+<a id="redux-thunk"></a>
 ### [Redux Thunk]({{"/redux-thunk/"|absolute_url}})
 
 - Introduce the concept of thunks as ways to delay evaluation and execution
@@ -214,7 +214,7 @@ permalink: /guide/
   - Note, now that we're using combineReducers, you'll need to update the state.searchTerm to include reducer name (i.e. state.robotSearch.searchTerm)
 - Replace the contents of componentDidMount to call the action to fetch robots
 
-<a id="/redux-merge/"></a>
+<a id="redux-merge"></a>
 ### [Merging]({{"/redux-merge/"|absolute_url}})
 
 - Notify that mergeProps is one way to intercept props passed into a component and use that when interacting with state

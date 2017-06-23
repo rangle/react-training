@@ -1,4 +1,4 @@
 ---
-layout: lesson
+layout: page
 permalink: /redux-merge/
 ---

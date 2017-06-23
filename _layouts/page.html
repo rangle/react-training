@@ -48,6 +48,9 @@
     <div class="message">
       <p><a href="{{'/'|absolute_url}}">{{site.title}}</a></p>
       {% include toc.html %}
+      {% if this and this.type == 'lesson' %}
+      <p><a href="{{'/guide/'|absolute_url}}#{{page.permalink|replace:'/',''}}"><em>Instructors' Guide</em></a></p>
+      {% endif %}
     </div>
   </body>
 </html>
