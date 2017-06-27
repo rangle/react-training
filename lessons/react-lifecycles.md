@@ -8,15 +8,10 @@ permalink: /react-lifecycles/
 ## What Do We Mean by "Lifecycle"?
 
 - Lifecycles are phases of an object's existence where we might want to add or replace logic
-- In some cases that logic replaces existing default logic
-
----
-
-## Categories
 
 ![Lifecycle Methods]({{"img/reactjs_component_lifecycle_functions.png"|absolute_url}})
 
-FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png)  with a Rangle version
+FIXME: Replace [this diagram](http://www.codevoila.com/uploads/images/201607/reactjs_component_lifecycle_functions.png) with a Rangle version
 
 ---
 

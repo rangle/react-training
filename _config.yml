@@ -76,6 +76,16 @@ toc:
 - title: Lifecycle Methods
   permalink: /react-lifecycles/
   type: lesson
+  questions:
+  - "Use lifecycle methods to add or change components' behavior at specific moments."
+  - "Do basic state initialization in constructor."
+  - "Use `componentDidMount` to run actions after all components are created."
+  - "Use `shouldComponentUpdate` to control re-rendering."
+  - "Use `componentWillUpdate` and `componentDidUpdate` for pre- and post-update actions."
+  - "Use `componentWillUnmount` for end-of-life cleanup."
+  keypoints:
+  - "Lifecycles methods are divided into mounting, updating, and unmounting."
+  - "`componentDidMount` is used most frequently."
 - title: React Summary
   permalink: /react-summary/
   type: lesson
