@@ -92,6 +92,16 @@ toc:
 - title: Introduction to Redux
   permalink: /redux-intro/
   type: lesson
+  questions:
+  - "How should I manage my application's state?"
+  - "How does Redux help me do this?"
+  - "What are the key parts of Redux and how do they work together?"
+  - "What developer tools are available to help build Redux applications?"
+  keypoints:
+  - "Application state should be immutable and updated using pure functions."
+  - "An application should dispatch an *action* to a *store* whenever state changes."
+  - "A *reducer* should produce a new state from the action and the old state."
+  - "Redux DevTools allows state visualization and rewind debugging."
 - title: Actions and Reducers
   permalink: /redux-action-reducer/
   type: lesson

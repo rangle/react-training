@@ -37,9 +37,9 @@ permalink: /redux-intro/
 
 ## How Redux Works
 
-FIXME: replace [this diagram](http://www.mrscottmcallister.com/assets/img/redux-flow.png) with a Rangle version
-
 ![Redux Flow]({{'img/redux-flow.png'|absolute_url}})
+
+FIXME: replace [this diagram](http://www.mrscottmcallister.com/assets/img/redux-flow.png) with a Rangle version
 
 ---
 
