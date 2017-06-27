@@ -105,6 +105,17 @@ toc:
 - title: Actions and Reducers
   permalink: /redux-action-reducer/
   type: lesson
+  questions:
+  - "How should an application be structured to make use of Redux?"
+  - "How do I define actions?"
+  - "How do I handle actions?"
+  - "How do I enable different parts of the application to work together?"
+  keypoints:
+  - "Divide application into high-level stateful components and low-level stateless components."
+  - "Define symbolic names for actions."
+  - "Define functions to create action objects."
+  - "Define a reducer function that turns state and action into a new state."
+  - "Reducer functions should return the state unchanged if the action is not theirs to handle."
 - title: Providing a Store
   permalink: /redux-store/
   type: lesson
