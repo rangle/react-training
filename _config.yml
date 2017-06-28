@@ -102,6 +102,15 @@ toc:
   - "An application should dispatch an *action* to a *store* whenever state changes."
   - "A *reducer* should produce a new state from the action and the old state."
   - "Redux DevTools allows state visualization and rewind debugging."
+- title: Hello Redux
+  permalink: /redux-hello/
+  type: lesson
+  questions:
+  - "How do I implement this in an application?"
+  keypoints:
+  - "Define state and actions."
+  - "Use `combineReducers` and `createStore` to connect them to the application."
+  - "Use `store.dispatch` to take action."
 - title: Actions and Reducers
   permalink: /redux-action-reducer/
   type: lesson

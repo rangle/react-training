@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="1700px" viewBox="0 0 1440 1700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 45 (43475) - http://www.bohemiancoding.com/sketch -->
+    <title>redux</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="redux">
+            <g id="Container" transform="translate(60.000000, 1397.000000)">
+                <rect id="Rectangle-1" stroke="#FF4136" stroke-width="6" x="-3" y="-3" width="866" height="256" rx="4"></rect>
+                <g id="Group-2" transform="translate(115.000000, 111.000000)" font-size="36" fill="#081E25">
+                    <text id="Container-Component" font-family="OperatorMono-Medium, Operator Mono" font-weight="400">
+                        <tspan x="126.4" y="35">Container Component</tspan>
+                    </text>
+                    <text id="React-Component-whic" font-family="OperatorMono-BookItalic, Operator Mono" font-style="italic" font-weight="300">
+                        <tspan x="77.4" y="79">React Component which is </tspan>
+                        <tspan x="136.8" y="123">connected to Redux</tspan>
+                    </text>
+                </g>
+                <text id="props-=-{-foo,-baz,-" font-family="OperatorMono-BookItalic, Operator Mono" font-size="24" font-style="italic" font-weight="300" fill="#AAAAAA">
+                    <tspan x="152" y="57">props = { foo, baz, </tspan>
+                    <tspan x="416" y="57" font-family="OperatorMono-BoldItalic, Operator Mono" font-weight="bold">fooAction</tspan>
+                    <tspan x="534.8" y="57">, </tspan>
+                    <tspan x="561.2" y="57" font-family="OperatorMono-BoldItalic, Operator Mono" font-weight="bold">barAction</tspan>
+                    <tspan x="680" y="57"> }</tspan>
+                </text>
+            </g>
+            <g id="Actions" transform="translate(810.000000, 350.000000)">
+                <rect id="Rectangle-1" stroke="#3D9970" stroke-width="6" x="-3" y="-3" width="431" height="291.714286" rx="4"></rect>
+                <g id="Group-5" transform="translate(16.000000, 48.571429)" fill="#081E25">
+                    <text id="ACTION" font-family="OperatorMono-Bold, Operator Mono" font-size="36" font-weight="bold">
+                        <tspan x="150.1" y="35">ACTION</tspan>
+                    </text>
+                    <text id="{" font-family="OperatorMono-BookItalic, Operator Mono" font-size="36.4568528" font-style="italic" font-weight="300">
+                        <tspan x="0" y="61">{</tspan>
+                        <tspan x="0" y="105"> type: ‘ACTION_TYPE’</tspan>
+                        <tspan x="0" y="149"> payload: {…}</tspan>
+                        <tspan x="0" y="193">}</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="ActionCreators" transform="translate(382.000000, 350.000000)">
+                <rect id="Rectangle-1" stroke="#2ECC40" stroke-width="6" x="-3" y="-3" width="406" height="206" rx="4"></rect>
+                <g id="Group-5" transform="translate(61.000000, 34.000000)" font-size="36" fill="#081E25">
+                    <text id="ActionCreators" font-family="OperatorMono-Bold, Operator Mono" font-weight="bold">
+                        <tspan x="0.4" y="35">ActionCreators</tspan>
+                    </text>
+                    <text id="functions-that-retur" font-family="OperatorMono-BookItalic, Operator Mono" font-style="italic" font-weight="300">
+                        <tspan x="0.4" y="79">functions that </tspan>
+                        <tspan x="0.4" y="123">return </tspan>
+                        <tspan x="139" y="123" font-family="OperatorMono-BoldItalic, Operator Mono" font-weight="bold">actions</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="store" transform="translate(30.000000, 300.000000)">
+                <rect id="Rectangle-1" stroke="#FF851B" stroke-width="6" x="-3" y="-3" width="306" height="306" rx="4"></rect>
+                <g id="Group-6" transform="translate(19.000000, 62.000000)" font-size="36">
+                    <text id="STORE" font-family="OperatorMono-Bold, Operator Mono" font-weight="bold" fill="#001F3F">
+                        <tspan x="81" y="35">STORE</tspan>
+                    </text>
+                    <text id="Contains-your-applic" font-family="OperatorMono-BookItalic, Operator Mono" font-style="italic" font-weight="300" fill="#081E25">
+                        <tspan x="2.11079884" y="79">Contains your </tspan>
+                        <tspan x="21.9107988" y="123">application </tspan>
+                        <tspan x="81.3107988" y="167">state</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="mapStateToProps" transform="translate(60.000000, 701.000000)">
+                <rect id="Rectangle-1" stroke="#0074D9" stroke-width="6" x="-3" y="-3" width="406" height="256" rx="4"></rect>
+                <g id="Group-4" transform="translate(22.000000, 40.000000)" fill="#081E25">
+                    <text id="mapStateToProps" font-family="OperatorMono-Bold, Operator Mono" font-size="36" font-weight="bold">
+                        <tspan x="30" y="35">mapStateToProps</tspan>
+                    </text>
+                    <text id="{-" font-family="OperatorMono-BookItalic, Operator Mono" font-size="24" font-style="italic" font-weight="300">
+                        <tspan x="0" y="77">{ </tspan>
+                        <tspan x="0" y="106">	foo: state.foo,</tspan>
+                        <tspan x="0" y="135">	baz: state.bar.baz,</tspan>
+                        <tspan x="0" y="164">}</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="mapDispatchToProps" transform="translate(490.000000, 701.000000)">
+                <rect id="Rectangle-1" stroke="#0074D9" stroke-width="6" x="-3" y="-3" width="436" height="256" rx="4"></rect>
+                <g id="Group-4" transform="translate(16.000000, 55.000000)" fill="#081E25">
+                    <text id="mapDispatchToProps" font-family="OperatorMono-Bold, Operator Mono" font-size="36" font-weight="bold">
+                        <tspan x="21.3" y="35">mapDispatchToProps</tspan>
+                    </text>
+                    <text id="{-" font-family="OperatorMono-BookItalic, Operator Mono" font-size="20" font-style="italic" font-weight="300">
+                        <tspan x="0" y="63">{ </tspan>
+                        <tspan x="0" y="87"> fooAction: ()=&gt; dispatch(fooAction),</tspan>
+                        <tspan x="0" y="111"> barAction: ()=&gt; dispatch(barAction),</tspan>
+                        <tspan x="0" y="135">}</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="combineReducers" transform="translate(30.000000, 30.000000)">
+                <g id="reducers" transform="translate(16.000000, 17.000000)">
+                    <g id="Group-3">
+                        <g id="Reducers">
+                            <rect id="Rectangle-1-Copy-5" stroke="#B10DC9" stroke-width="6" x="-3" y="-3" width="206" height="81" rx="4"></rect>
+                            <text id="Reducer-1" font-family="OperatorMono-Medium, Operator Mono" font-size="36" font-weight="400" fill="#081E25">
+                                <tspan x="11.4" y="47">Reducer 1</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-3-Copy" transform="translate(235.000000, 0.000000)">
+                        <g id="Reducers">
+                            <rect id="Rectangle-1-Copy-5" stroke="#B10DC9" stroke-width="6" x="-3" y="-3" width="206" height="81" rx="4"></rect>
+                            <text id="Reducer-2" font-family="OperatorMono-Medium, Operator Mono" font-size="36" font-weight="400" fill="#081E25">
+                                <tspan x="11.4" y="47">Reducer 2</tspan>
+                            </text>
+                        </g>
+                    </g>
+                    <g id="Group-3-Copy-2" transform="translate(470.000000, 0.000000)">
+                        <g id="Reducers">
+                            <rect id="Rectangle-1-Copy-5" stroke="#B10DC9" stroke-width="6" x="-3" y="-3" width="206" height="81" rx="4"></rect>
+                            <text id="..." font-family="OperatorMono-Medium, Operator Mono" font-size="36" font-weight="400" fill="#081E25">
+                                <tspan x="70.3" y="47">...</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle-1" stroke="#F012BE" stroke-width="6" x="-3" y="-3" width="709" height="225" rx="4"></rect>
+                <text font-family="OperatorMono-Bold, Operator Mono" font-size="36" font-weight="bold" fill="#001F3F">
+                    <tspan x="202.5" y="170">combineReducers</tspan>
+                </text>
+            </g>
+            <g id="connect" transform="translate(60.000000, 1021.000000)">
+                <g id="Group-7" transform="translate(115.000000, 37.000000)" font-size="36">
+                    <g id="Group-6">
+                        <text id="Connect" font-family="OperatorMono-Bold, Operator Mono" font-weight="bold" fill="#001F3F">
+                            <tspan x="245.2" y="35">Connect</tspan>
+                        </text>
+                        <text id="Takes-the-output-fro" font-family="OperatorMono-BookItalic, Operator Mono" font-style="italic" font-weight="300" fill="#081E25">
+                            <tspan x="27.9" y="79">Takes the output from the two </tspan>
+                            <tspan x="47.7" y="123">map functions and passes it </tspan>
+                            <tspan x="8.1" y="167">into a React component as props</tspan>
+                        </text>
+                    </g>
+                </g>
+                <rect id="Rectangle-1" stroke="#7FDBFF" stroke-width="6" x="-3" y="-3" width="866" height="256" rx="4"></rect>
+            </g>
+            <g id="connectors" transform="translate(163.000000, 134.000000)">
+                <path d="M3,121 L3,161" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M-4.4408921e-16,150.2 L3,161 L6,150.2" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M1,471 L1,563.048897" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M-2,552.248897 L1,563.048897 L4,552.248897" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M544,820 L544,885" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M541,874.2 L544,885 L547,874.2" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M90,822 L90,884.048897" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M87,873.248897 L90,884.048897 L93,873.248897" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M311,1141.29185 L311,1261.0489" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M308,1250.2489 L311,1261.0489 L314,1250.2489" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <text id="State" font-family="OperatorMono-BookItalic, Operator Mono" font-size="24" font-style="italic" font-weight="300" fill="#AAAAAA">
+                    <tspan x="10" y="524">State</tspan>
+                </text>
+                <path d="M544,421 L544,563.048897" id="Line" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path id="Line-decoration-1" d="M541,552.248897 L544,563.048897 L547,552.248897" stroke="#001F3F" stroke-width="2" fill="#111111" stroke-linecap="round" stroke-linejoin="round"></path>
+                <text id="fooAction" font-family="OperatorMono-BookItalic, Operator Mono" font-size="24" font-style="italic" font-weight="300" fill="#AAAAAA">
+                    <tspan x="414" y="482">fooAction</tspan>
+                    <tspan x="414" y="511">barAction</tspan>
+                </text>
+                <polyline id="Path-6" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="375.074435 1299.30558 375.074435 1240.23027 1141.34714 1240.23027 1141.34714 68.7076837 573.922844 68.7076837"></polyline>
+                <path id="Path-6-decoration-1" d="M573.922844,68.7076837 L584.722844,71.7076837 L584.722844,65.7076837 L573.922844,68.7076837 Z" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <polyline id="Path-7" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="557 1326.40895 557 1352.32167 1194.03973 1352.32167 1194.03975 0.0688635876 573.642548 0.0688635876"></polyline>
+                <path id="Path-7-decoration-1" d="M573.642548,0.0688635876 L584.442548,3.06886359 L584.442548,-2.93113641 L573.642548,0.0688635876 Z" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                <text id="Output-from-mapState" font-family="OperatorMono-BookItalic, Operator Mono" font-size="24" font-style="italic" font-weight="300" fill="#AAAAAA">
+                    <tspan x="10" y="1206">Output from mapStateToProps &amp; mapDispatchToProps</tspan>
+                </text>
+            </g>
+            <rect id="Rectangle-12" fill-opacity="0.25" fill="#01FF70" x="617" y="1430" width="128" height="32"></rect>
+            <rect id="Rectangle-12" fill-opacity="0.25" fill="#01FF70" x="471" y="1432" width="128" height="32"></rect>
+        </g>
+    </g>
+</svg>

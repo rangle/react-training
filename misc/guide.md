@@ -154,10 +154,11 @@ permalink: /guide/
 <a id="redux-store"></a>
 ### [Providing a Store]({{"/redux-store/"|absolute_url}})
 
-- Add store using `createStore` in index.js, feeding the robotSearchReducer to it
+- Add store using `createStore` in `index.js`
+- Feed the `robotSearchReducer` to it
 - Use debugger to examine contents of store
-- Use `Provider` from react-redux, assign the store to it and then wrap the App component
-- Inspect using Redux DevTools to see if everything has completed alright
+- Use `Provider` from `react-redux`, assign the store to it, then wrap the `App` component
+- Inspect using Redux DevTools to see if everything has completed correctly
 
 <a id="redux-connect"></a>
 ### [Making Connections]({{"/redux-connect/"|absolute_url}})
