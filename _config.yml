@@ -128,6 +128,15 @@ toc:
 - title: Providing a Store
   permalink: /redux-store/
   type: lesson
+  questions:
+  - "How do I use `react-redux` to create a store?"
+  - "How do I tell it what to dispatch?"
+  keypoints:
+  - "Use `createStore` to create a Redux store."
+  - "Use `Provider` to make that store visible throughout the application."
+  - "Define a function to map application state to properties."
+  - "Define another function to tell the store what to dispatch when."
+  - "Use `connect` to wire everything together."
 - title: Making Connections
   permalink: /redux-connect/
   type: lesson
