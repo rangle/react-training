@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /redux-long/
+permalink: /redux-async/
 ---
 
 ---

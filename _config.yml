@@ -137,8 +137,8 @@ toc:
   - "Define a function to map application state to properties."
   - "Define another function to tell the store what to dispatch when."
   - "Use `connect` to wire everything together."
-- title: Long-Lived Operations
-  permalink: /redux-long/
+- title: Async Operations
+  permalink: /redux-async/
   type: lesson
 - title: Redux Logging
   permalink: /redux-logging/
