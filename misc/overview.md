@@ -25,7 +25,7 @@ second uses the code built in the first, it can be used independently.
 As well as React and Redux, learners will learn best practices for
 building fast, scalable code.
 
-## Prerequisits 
+## Prerequisites 
 
 - NPM and Node v6+ <http://nodejs.org/download/>
 - A code editor
